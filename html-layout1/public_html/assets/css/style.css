@@ -1,0 +1,135 @@
+.topnav {
+  list-style: none;
+}
+/*  */
+.justify-content-end{justify-content: end;}
+.w-50 {width: calc(100% / 2);}
+.w-33{width: calc(100% / 3);}
+.w-25{width: calc(100% / 4);}
+.d-flex {display: flex;}
+.d-block{display: block;}
+.justify-content-center{justify-content: center;}
+.justify-content {justify-content: space-between;}
+.center-align{align-items: center;}
+/* start */
+
+header{padding-top: 0px; padding-bottom: 0px; background-repeat: no-repeat; background-size: cover; }
+section{padding-top: 0px; padding-bottom: 0px; background-repeat: no-repeat; background-size: cover; }
+.container{position: relative; max-width: 1820px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; left: 0; right: 0;}
+.logo{width: 202px;height: 54px;}
+.logo img{object-fit: cover;height: 100%; width: 100%;}
+nav{padding-top: 8px;padding-bottom: 2px; position: fixed; z-index: 999; top: 0; width: 100%; background-color: white;}
+.nav-bar{line-height: 30px; display: inline; padding: 0 50px;display: flex;flex-wrap: wrap;flex-direction: column; justify-content: center;}
+nav ul{display: flex; gap: 10px 50px;}
+nav ul li a{font-size: 18px;font-style: normal; text-transform: uppercase;color: #000000;font-weight: 400;font-family: "Arial";text-decoration: none; }
+
+.nav-link.active, .nav-link:hover {color: red;}
+.search__input{border: 1px solid #B6B6B6;padding: 0px  10px; position: relative; width: 521px;height: 36px;border-radius: 25px; padding-right: 10px; margin-right: auto;}
+.icn1{position: absolute;z-index: 99;right: 30px; color: gray;}
+
+.search-in{margin-left: auto;width: auto;display: flex;align-items: center;}
+
+/*  */
+.banner-section{padding-top: 80px;margin-bottom: 80px;}
+.asides{margin-bottom: 100px;}
+.main{height: 100%; width: 100%; display: flex; flex-direction: row; justify-content: center;}
+.content{max-width: 706px; text-align: center;font-family: 'Arial';font-style: normal;font-weight: 700;font-size: 20px;line-height: 40px;text-align: center;  
+  color: #414141;}
+  /*  */
+.h2-l{font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;  
+  color: #414141;
+margin-bottom: 50px;}
+  .h3-l{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+     color: #FF0000;}
+  .colum-slide{gap: 28px;
+    }
+    .o1{font-family: 'Arial';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #414141;
+      text-align: left;
+    }
+    .ol ,li{margin-bottom: 15px;}
+    .o2{font-family: 'Arial';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #414141;
+    text-align: left;}
+    .o3{
+      font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+color: #3092F9;
+text-align: left;
+    }
+/*  */
+
+.slide-container{max-width: 900px;}
+.s-c{height: 100%; width: 100%; display: flex; flex-direction: row; justify-content: center;}
+
+.aside-img{width: 480px;height: 340px;}
+.a1-img{height: 100%;width: 100%; object-fit: cover;}
+.aside-content{
+padding-left: 35px;
+width: 50%;
+}
+.aside2-content{
+  padding-right: 22px;
+  width: 50%;
+  }
+.par-asid{font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;}
+.aside-v{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #FF0000;
+}
+.aside-head{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 30px;
+  color: #000000;
+}
+.foter{text-align: center; padding: 10px;}
+.foter address{font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1D1D1D;}
+.foter h2{font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;}
+/* footer{margin-top: 80px;} */
+.footer{margin-top: 80px; background-color: #F9F9F9;}

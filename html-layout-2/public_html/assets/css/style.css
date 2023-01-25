@@ -1,0 +1,112 @@
+.topnav {
+    list-style: none;
+  }
+  /*  */
+  .justify-content-end{justify-content: end;}
+  .w-50 {width: calc(100% / 2);}
+  .w-33{width: calc(100% / 3);}
+  .w-25{width: calc(100% / 4);}
+  .d-flex {display: flex;}
+  .d-block{display: block;}
+  .justify-content-center{justify-content: center;}
+  .justify-content {justify-content: space-between;}
+  .center-align{align-items: center;}
+  .h3-p{font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+  font-style: normal;}
+  .h2-h{font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    color: #414141;
+  }
+  /* start */
+  
+  header{padding-top: 0px; padding-bottom: 0px; background-repeat: no-repeat; background-size: cover; }
+  section{padding-top: 0px; padding-bottom: 0px; background-repeat: no-repeat; background-size: cover; }
+  .container{position: relative; max-width: 1820px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; left: 0; right: 0;}
+  .logo{width: 202px;height: 54px;}
+  .logo img{object-fit: cover;height: 100%; width: 100%;}
+  nav{padding: 10px 0px; position: fixed; z-index: 999; top: 0; width: 100%; background-color: white;}
+  .nav-bar{line-height: 30px; display: inline; padding: 0 50px;display: flex;flex-wrap: wrap;flex-direction: column; justify-content: center;}
+  nav ul{display: flex; gap: 10px 50px;}
+  nav ul li a{font-size: 18px;font-style: normal;color: #000000;font-weight: 400;font-family: "Arial";text-decoration: none; }
+  
+  .nav-link.active, .nav-link:hover {color: red;border-bottom: 1px solid red;}
+  .search__input{margin: 0 auto; border: 1px solid #B6B6B6;padding: 0px  40px 0px 20px; position: relative; width: 521px;height: 36px;border-radius: 25px; margin-right: auto;}
+  .icn1{position: absolute;z-index: 99;right: 30px; color: gray;}
+  
+  .search-in{margin-left: auto;width: auto;display: flex;align-items: center;}
+  /*  */
+
+  .banner-section{padding-top: 80px;margin-bottom: 80px;}
+  .content{text-align: center;}
+  .p1{margin: 0 auto; width: 550px; margin-bottom: 32px;margin-top: 50px  ;}
+  th{border-collapse: none;}
+  table{margin: 0 auto;}
+  table {
+    width: 1440px;
+    border-collapse: collapse;
+    text-align: left;
+    border:1px solid #CFCFCF;
+  }
+  
+  th, td{padding: 10px; border: none;}
+  th{
+    background: #EAE7E7;}
+  td{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;}
+  tr{
+    border-bottom: 1px solid #CFCFCF;
+  }
+  /*  */
+  .h-2{text-align: center;margin-top: 100px;}
+  .p2{width: 980px;margin: 0 auto; font-weight: 400; text-align: center;line-height: 40px;margin-top: 40px;}
+  /*  */
+  .videos{width: 1046px;height: 424.64px;margin: 0 auto;margin-top: 50px;}
+  video{height: 100%; width: 100%; object-fit: cover;}
+  /*  */
+  .audios{width: 563px;height: 123px; margin: 0 auto;}
+  audio{width: 100%; height: 100%;object-fit: cover;margin-top: 0px;}
+  /*  */
+  .h-4{margin-top: 100px;}
+  /*  */
+  .iframes{width: 570px;height: 209px; margin: 0 auto; margin-top: 100px;}
+  .if-map{width: 100%;height: 100%; object-fit: cover;}
+  /*  */
+  .gap{gap: 50px;}
+  footer{background-color: #F9F9F9;}
+  .f-p{font-size: 20px; text-align: center;margin-top: 60px;}
+  address{font-style: normal;text-align: center;}
+  form{padding: 10px;text-align: left; }
+  .s-l{ gap: 50px;}
+  .input{ width: 323px;border: 1px solid #CFCFCF ; padding: 10px; margin-bottom: 15px;}
+  .input2{width: 97%;padding: 10px;margin-bottom: 10px;border: 1px solid #CFCFCF ;}
+  .input3{width: 345px; padding: 10px;border: 1px solid #CFCFCF ;}
+  .form-f{height: 100%;width: 100%;display: flex; flex-direction: row;justify-content: center; margin-top: 94px;} 
+input{margin-bottom: 25px; }
+.input4{padding-left: 30px; font-size: 15px;}
+.input5{margin-left: 45px; width: 71px; height: 26px;}
+.input6{margin-left: 30px; width: 131px;}
+.checkbox{ margin-bottom: 15px;}
+.checkin{margin-left: 20px;}
+.subbtn,.rebtn{padding: 10px;border: 1px solid #CFCFCF; color: #000000; width: 100px;font-size: 18px;font-family: 'Lato';}
+.subbtn:hover{background-color: #414141; color: #F9F9F9;}
+.rebtn:hover{background-color: #414141; color: #F9F9F9;}
+@font-face {
+  font-family: 'Lato';
+  src: url(../font/AnyConv.com__Lato-Regular.woff);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{display: none;margin: 0;}
+
+@media screen and(max-width:1600px){
+  
+  
+}

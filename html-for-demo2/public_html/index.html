@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="head">HTML Tutorial</h1>
+    </header>
+    <section>
+        <div class="container">
+
+            <div class="border-bottom">
+                    <div class="d-flex ">
+                        <p class="num">1)</p>
+                        <div class="had-con d-flex uo-li">
+                            <ol class="w-25" type="A">
+                                <li>Red</li>
+                                <li>Yellow</li>
+                                <li>Orange</li>
+                            </ol>
+                            <ol class="w-25" type="I">
+                                <li>Red</li>
+                                <li>Yellow</li>
+                                <li>Orange</li>
+                            </ol>
+                            <ul class="w-25" style="list-style-type:square;">
+                                <li>Red</li>
+                                <li>Yellow</li>
+                                <li>Orange</li>
+                            </ul>
+                            <ul class="w-25" style="list-style-type:circle;">
+                                <li>Red</li>
+                                <li>Yellow</li>
+                                <li>Orange</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="border-bottom">
+                    <div class="d-flex">
+                        <p class="num">2)</p>
+                        <div class="had-cons">
+                            <audio controls autoplay>
+                                <source src="./assets/audio/audio.mp3" type="audio/mpeg">
+                              </audio>
+
+                        </div>
+                    </div>
+            </div>
+            <div class="border-bottom">
+                    <div class="d-flex">
+                        <p class="num">3)</p>
+                        <div class="had-con1" style="margin-bottom: 30px;">
+                            <video width="320" height="240" controls>
+                                <source src="./assets/video/video.mp4" type="video/mp4">                              
+                              </video>
+                        </div>
+                    </div>
+            </div>
+            <div class="border-bottom">
+                    <div class="d-flex">
+                        <p class="num">4)</p>
+                        <div class="had-cons">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" class="if-map"></iframe>
+                        </div>
+                    </div>
+            </div>
+            <div class="border-bottom">
+                <div class="d-flex">
+                    <p class="num">5)</p>
+                    <div class="had-cons">
+                        <table border="1px">
+                            <tr style="border: 1px solid;"class="tb-1">
+                                <td>Company</td>
+                                <td>Contact</td>
+                                <td>Country</td>
+                            </tr>
+                            <tr class="tb-2">
+                                <td>Lorem ipsum</td>
+                                <td>sed quia consequuntur</td>
+                                <td>usa</td>
+                            </tr>
+                            <tr class="tb-2">
+                                <td>sed quia consequuntur</td>
+                                <td>commodi consequatur</td>
+                                <td>Mexico</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom">
+                <div class="d-flex">
+                    <p class="num">6)</p>
+                    <div class="had-cons1">
+                        <!-- <form action=""></form> -->
+                        <form action="pratice.html" class="ff-1">            
+                            <div>
+                              <label class="rl" for='full-name' style="font-size: 18px; font-family:Arial">First Name :</label>
+                                <input id='full-name' name='full-name' type='text' style="padding: 8px; border: 1px solid #D7D7D7;" placeholder="First Name"/><br>
+  
+                            </div>
+                            <div>
+                                <label class="rl" for='middle-name' style="font-size: 18px; font-family:Arial">Middle Name :</label>
+                                <input  id='full-name' name='middle-name' type='text' style="padding: 8px; border: 1px solid #D7D7D7;" placeholder="Middle Name"/><br>
+                            </div>
+                          
+                            <label  class="rl" for='last-name' style="font-size: 18px; font-family:Arial">Last Name :</label>
+                            <input id='full-name' name='last-name' type='text' style="padding: 8px; border: 1px solid #D7D7D7;" placeholder="Last Name"/><br>
+
+                             <label class="rl" for='email' style="font-size: 18px; font-family:Arial">Email ID:</label>
+                            <input id='email'name='email'type='email' style="padding: 8px; border: 1px solid #D7D7D7;" placeholder='email@example.com'/><br>
+
+                            <label for='Number' class="rl" style="font-size: 18px; font-family:Arial">Mobile Number:</label>
+                            <input type="number" step="10" style="padding: 8px; border: 1px solid #D7D7D7;" placeholder="Mobile Number"/><br>
+
+                            
+                            <label for="date" class="rl" style="font-size: 18px; font-family:Arial">Date:</label>
+                            <input type="date" style="padding: 8px; border: 1px solid #D7D7D7;" name="date"><br>
+                            <label for="date-time" class="rl" style="font-size: 18px; font-family:Arial">Date Time:</label>
+                            <input type="datetime-local" style="padding: 8px; border: 1px solid #D7D7D7;" name="date-time"><br>
+
+                            <div class="radio">
+                                    <label class="rl" style="font-size: 18px; font-family:Arial">Gender:</label>
+                                    <input type="radio" id="male" name="Gender" value="Male"><label style="width: 7%;" for="male">Male</label>
+                                    <input type="radio" id="Female"name="Gender" value="femle"><label  for="Female">Female</label>
+                                    
+                            </div>
+                            <label class="rl" style="font-size: 18px; font-family:Arial">Select City:</label>
+                            <select id="country" name="Country">
+                                <option value="Ind">India</option>
+                                <option value="ca">Canada</option>
+                                <option value="usa">USA</option>
+                                </select><br>
+                            <div class="radio">
+                                <label class="rl" style="font-size: 18px; font-family:Arial">Languages:</label>
+                                <input type="radio" id="english" name="languages" value="English"><label for="english"  style="width: 7%;">English</label>
+                                <input type="radio" id="gujarati" name="languages" value="Gujarati"><label for="gujarati" style="width: 7%;">Gujarati</label>
+                                <input type="radio" id="hindi" name="languages" value="Hindi"><label for="hindi">Hindi</label>
+                                
+                                
+                                
+                            </div>
+                            <label for="folder" class="rl" style="font-size: 18px; font-family:Arial">Folder:</label>
+                            <input type="file" name="file"><br>
+                            
+                            
+                            <label for="password" class="rl" style="font-size: 18px; font-family:Arial">password:</label>
+                            <input type="password" style="padding: 8px; border: 1px solid #D7D7D7;" ><br>
+                            <label for="color" class="rl" style="font-size: 18px; font-family:Arial">color:</label>
+                            <input type="color"  name="Color"><br>                            
+                            <label for="range" class="rl"style="font-size: 18px; font-family:Arial">Range:</label>
+                            <input type="range" id="vol" name="range" min="0" max="50"><br>
+
+                              <input type="submit" value="Submit" class="subbtn">
+                              <input type="reset" value="reset" class="rebtn">
+
+                                
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="border-bottom">
+                <div class="d-flex">
+                    <p class="num">7)</p>
+                    <div class="had-con2">
+                        <table border="1px">
+                            <tr style="text-align:center ;">
+                                <td>Company</td>
+                                <td>Contact</td>
+                                <td>Company</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+</body>
+</html>
