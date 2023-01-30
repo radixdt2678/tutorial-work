@@ -1,0 +1,78 @@
+*{box-sizing: border-box;}
+body{margin: 0px;background-color: #F8F8F8;}
+.topnav {list-style: none;}
+  /*  */
+.justify-content-end{justify-content: end;}
+.w-50 {width: calc(100% / 2);}
+.w-33{width: calc(100% / 3);}
+.w-25{width: calc(100% / 4);}
+.d-flex {display: flex;}
+.d-block{display: block;}
+.justify-content-center{justify-content: center;}
+.justify-content {justify-content: space-between;}
+.center-align{align-items: center;}
+mark{background-color: #FF0000;}
+.p-con{font-family: 'Arial';font-style: italic;font-weight: 400;font-size: 20px;line-height: 30px;}
+  /* start */
+  
+header{padding-top: 0px; padding-bottom: 0px; background-repeat: no-repeat; background-size: cover; }
+section{padding-top: 0px; padding-bottom: 0px; background-repeat: no-repeat; background-size: cover; }
+.container{position: relative; max-width: 1820px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; left: 0; right: 0;}
+/*  */
+.nev{display: flex; align-items: center;}
+.logo{width: 202px;height: 54px;}
+.logo img{object-fit: cover;height: 100%; width: 100%;}
+nav{padding-top: 8px;padding-bottom: 2px; position: fixed; z-index: 999; top: 0; width: 100%; background-color: white;}
+.nav-bar{padding: 10px 50px;display: flex;flex-direction: column;justify-content: center;transform: translateY(10px);}
+nav ul{display: flex; gap: 10px 50px;}
+nav ul li a{font-size: 18px;font-style: normal;color: #000000;font-weight: 400;font-family: "Arial";text-decoration: none; }
+  
+.nav-link.active, .nav-link:hover {color: red;}
+.search__input{border: 1px solid #B6B6B6;padding: 0px  10px; position: relative; width: 521px;height: 36px;border-radius: 25px; padding-right: 10px; margin-right: auto;}
+.icn1{position: absolute;z-index: 99;right: 30px; color: gray;}
+  
+.search-in{margin-left: auto;width: auto;display: flex;align-items: center;}
+  
+  /*  */
+.banner-section{padding-top: 80px;margin-bottom: 80px; background-color: #EAEAEA; }
+.asides{margin-bottom: 100px;}
+.he-1{color: #FF0000;}
+.main{height: 100%; width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+.content{max-width: 1109px; width: auto; text-align: left;font-family: 'Arial';font-style: normal;font-weight: 700;font-size: 20px;line-height: 40px;color: #414141;}
+.sec-img1{width: 480px;height: 100%; padding: 80px 0px;}
+.se-img1{height: 100%; width: 100%; object-fit: cover;}
+    /*  */
+.h2-l{font-family: 'Arial';font-style: normal;font-weight: 700;font-size: 40px;line-height: 40px;text-align: center;  
+    color: #FF0000;margin-bottom: 50px;}
+
+.h3-l{font-family: 'Arial';font-style: normal;font-weight: 400;font-size: 20px;line-height: 23px;color: #FF0000;}
+.colum-slide{gap: 28px;}
+.crd{ border: 1px solid #FF0000;box-shadow: 0px 4px 20px rgba(175, 175, 175, 0.1);border-radius: 20px; padding: 35px 10px; background-color: #FFFFFF;}
+.crd-c1{border-color:#3092F9;}
+.crd-c2{border-color:#FBA333;}
+.o1{font-family: 'Arial';font-style: normal;font-weight: 700;font-size: 20px;line-height: 30px;color: #414141;text-align: left;}
+.ol ,li{margin-bottom: 15px;}
+.o2{color: #414141;text-align: left;}.o3{color: #3092F9;text-align: left;}
+
+/*  */
+  
+.slide-container{max-width: 1320px;}
+.s-c{height: 100%; width: 100%; display: flex;justify-content: center;}
+  
+.aside-img{width: 50%;height: 340px;}
+.a1-img{height: 100%;width: 100%; object-fit: cover;}
+.aside-content{padding-left: 35px;width: 50%; background-color: #EAEAEA;}
+.aside2-content{padding: 20px; width: 50%;background-color: #EAEAEA;}
+.aside-head{font-family: 'Arial';font-style: normal;font-weight: 700;font-size: 32px;line-height: 30px;color: #3092F9;}
+.par-asid{font-family: 'Arial';font-style: normal;font-weight: 400;font-size: 18px;line-height: 30px;color: #000000;}
+.aside-v{font-family: 'Arial';font-style: normal;font-weight: 400;font-size: 20px;line-height: 30px;text-align: center;text-decoration: none;background-color: #000000;
+  color: #FFFFFF; border: 1px solid ; padding: 10px;}
+.aside-v:hover{color: #000000; background-color:#EAEAEA;}
+  
+/*  */
+.foter{text-align: center; padding: 10px;}
+.foter address{font-family: 'Arial';font-style: normal;font-weight: 400;font-size: 18px;line-height: 30px;color: #1D1D1D;}
+.foter h2{font-family: 'Arial';font-style: normal;font-weight: 700;font-size: 20px;line-height: 30px;text-align: center;color: #000000;}
+  /* footer{margin-top: 80px;} */
+.footer{margin-top: 80px; background-color: #EAEAEA;}
+  
