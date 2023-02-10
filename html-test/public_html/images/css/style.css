@@ -1,0 +1,886 @@
+body {
+  background-color: #f9f5e3;
+}
+/*  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  /* vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+#check{display: none;}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  /* content: none; */
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.W-50 {
+  width: calc(100% / 2);
+}
+.w-100{width: calc(100% / 3);}
+.w-200{width: calc(100% / 4);}
+.d-flex {
+  display: flex;
+}
+.justify-content {
+  justify-content: space-between;
+}
+@font-face {
+	font-family: "grand hotel";
+	src: url(../font/AnyConv.com__GrandHotel-Regular.woff);
+}
+@font-face {
+	font-family: "Lato";
+	src: url(../font/AnyConv.com__Lato-Regular.woff) format(woff);
+}
+
+
+/*  */
+
+section{ padding-top: 70px; padding-bottom: 70px; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover;}
+.container{position: relative; max-width: 1320px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; z-index: 99;}
+/*  */
+
+a.active,a:hover {outline: 1px solid white; transition: .5s;}
+.checkbtn{font-size: 30px; color: aliceblue ; float: right; line-height: 80px; margin-right: 40px; cursor: pointer; display: none;}
+
+.nav-section{position: relative; background-image: url(../images/nav.jpg); background-repeat: no-repeat;z-index: 10; background-size: cover;}
+.nav-section::before{
+	width: 100%;
+	height: 100%;
+	top:0;
+	bottom: 0;	
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-color: #e93a42;
+	content: '';	
+	opacity:0.8;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 10;
+  }
+.logo-img {text-align: center;}
+.logo{width: 300px; height: 160px;}
+
+.nev-bar {
+	display: flex;
+	justify-content: center;
+  	padding: 0;
+	gap: 10px 150px;
+	margin-bottom: 25px;
+}
+.nev-bar, li a{
+	text-decoration: none;
+	color: #FFF;
+	font-family:  'Lato', sans-serif; 
+	text-align: center; 
+	padding: 8px 16px; 
+}
+
+.nev .nev-link:hover,
+.nev .nev-link.active:hover{color:#FFF; outline: 1px solid; border-radius: 25px;  cursor: pointer;} 
+
+
+.del-0{color: #FFF; font-family: grand hotel; font-size: 350px; text-align: center; font-weight: 400;}
+.label{
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+.start-btn a{color: #eb4d55; font-weight: bolder;}
+.start-btn{text-align: center;margin-top: 50px; margin-bottom: 125px;}
+.or-start-btn{font-family: sans-serif; background-color: #FFF;text-decoration:none; font-weight: 400; border-radius: 15px;padding: 10px 50px 10px 50px;white-space: nowrap;font-size: 14px;border: 2px solid #FFF;color: rgb(65, 166, 255); text-decoration: none; margin: 15px;}
+.or-start-btn:hover{background-color: red; color:white; border: none;}
+
+/*  */
+
+
+.pop-section{position: relative; background-image: url(../images/pop.jpg); background-repeat: no-repeat; background-size: cover;}
+.pop-section::before{
+	width: 100%;height: 100%;position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;
+	background-color: #ffff;
+	content: '';opacity:0.8 ;
+	background-position: bottom;background-repeat: no-repeat;
+	background-size: cover;z-index: 10;}
+
+.p-1{padding-top: 100px;font-size: 125px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+
+.c-1{text-align: center; margin-bottom: 80px; font-family:  'Lato', sans-serif; font-size: 30px; color: #3d3d3d;}
+.card{justify-content: center;justify-content: space-between;}
+.imgs{width: 300px;height: 300px; border-radius: 50%; }
+.cd-img{text-align: center;}
+.cd-content{text-align: center;}
+
+.cd-content h3{
+	font-size: 50px;
+	color: #e8565e;
+	font-weight: 400;
+	font-family: "Grand Hotel";
+	
+}
+.c-content{
+	font-family:  'Lato', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 20px;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #3d3d3d;
+}
+
+/*  */
+.state-section{position: relative; background-image: url(../images/state.jpg); background-repeat: no-repeat; background-size: cover; z-index: -1;}
+.state-section::before{
+	width: 100%;height: 100%;
+	top: 0;bottom: 0;
+	left: 0;right: 0;
+	position: absolute;background-color:#eb4d55;
+	content: '';opacity:0.8 ;
+	background-position: bottom;background-repeat: no-repeat;background-size: cover;z-index: 10;
+  }
+.stat{
+	padding-top: 70px;font-size: 125px;color: #FFF;
+	font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+.cont-1{
+	text-align: center;
+	font-family:  'Lato', sans-serif;
+	font-weight: 400;
+	margin-top: 12px;
+	font-size: 30px;
+	color: #FFF;
+}
+.count{justify-content: center; justify-content: space-between;}
+.b1{ 
+	height: 280px;
+	width: 280px;
+	color: #FFF;
+	border: 7px dashed;
+	border-radius: 50%;
+	margin-top: 170px;
+	margin-bottom: 130px;
+	text-align: center;
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.count-1{padding: 0 50px ; }
+
+/* our-menu */
+.menu-section{background: #ede5cb; background-repeat: no-repeat; background-size: cover; z-index: 10;}
+
+.Menu{font-size: 125px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+
+.cards{flex-wrap: wrap; margin: 0 50px; margin-bottom: 70px;}
+
+.card1,.card2,.card3,.card4{width: 50%;}
+
+.mb-4{margin-bottom: 80px;}
+
+.m-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 150px; font-size: 30px;color: #3d3d3d;}
+
+.n-1{font-size: 50px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;line-height: 70px;}
+
+.p{font-family:  'Lato', sans-serif; color: #3d3d3d;}
+
+
+/* slide */
+
+.divide-section{background: #ede5cb; z-index: 10;}
+.s1-container{position: relative; background-image: url(../images/popp.jpg); background-repeat: no-repeat; background-size: cover;}
+.s1-container::before{width: 100%;height: 100%;position: absolute;top: 0;bottom: 0;background-color:#eb4d55;content: '';opacity:0.8 ;background-position: bottom;
+	background-repeat: no-repeat;background-size: cover;z-index: 10;}
+
+.s2-container{width: 50%; background: #f9f5e3; padding: 20px 40px 20px 70px;}
+.s-content{text-align: left; margin-top: 15px; margin-bottom: 15px;}
+.P{font-family:  'Lato', sans-serif; color: #3d3d3d; font-size: 30px;}
+
+.slide{margin-top: 200px;font-size: 125px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;margin-bottom: 30px;}
+
+.S-btn a{color: #FFF; font-weight: bolder;}
+.S-btn{text-align: left; margin-top: 40px; margin-bottom: 270px;}
+.s-start-btn{font-family:  'Lato', sans-serif;color: #FFF; background-color:#eb4d55;text-decoration:none; font-weight: 400; border-radius: 15px;padding: 10px 50px 10px 50px;white-space: nowrap;font-size: 14px;text-decoration: none;}
+.s-start-btn:hover{background-color: #FFF; color:#eb4d55; border: none;}
+
+
+
+
+
+/* package menu */
+
+.package-section{background:#ede5cb; background-repeat: no-repeat; background-size: cover;}
+
+.P-m{font-size: 125px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+
+
+
+.P-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 100px; font-size: 30px;color: #3d3d3d;}
+.carded{ justify-content: space-between; margin-bottom: 120px;}
+.C-1{border-radius: 20px ;background-color: #f9f5e3; margin: 0 60px;}
+.Card-img{text-align: center;}
+.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+
+.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+.button:hover{background-color:white; color: #e8565e; }
+.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+.c-dis{ font-family: 'Lato', sans-serif; text-align: center;}
+
+
+
+/* cheif */
+.chef-section{position: relative; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover;}
+
+.chef-section::before{
+	width: 100%;height: 100%;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;
+	background-color: #ffff;content: '';opacity:0.8 ;background-position: bottom;background-repeat: no-repeat;background-size: cover;z-index: 10;
+  }
+
+.ch-image{padding-top: 60px; text-align: center; margin-bottom: 120px;}
+.ch-img{ border-radius: 50%; width: 210px;}
+.ch-C{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif;}
+.ch-R{text-align: center; font-size: 100px; font-weight: 400; font-family: Grand Hotel; color: #e8565e; margin-bottom: 150px;}
+
+/*  */
+.sub-section{background:#ede5cb; background-repeat: no-repeat; background-size: cover;}
+
+.txt-sub{text-align: center; font-size: 100px; font-weight: 400; font-family: Grand Hotel; color: #e8565e; margin-bottom: 100px;}
+.con-sub{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif;}
+.search-in{justify-content: center;}
+.se-l{
+	
+	border-radius:35px;
+	width: 650px;
+	border: none;
+	height: 32px;
+	background-color: #ffffff;
+	padding: 15px;
+}
+.btn-outline{
+	border: none;
+	color: #FFF;
+	width: 222px;
+	height: 62px;
+	border-radius: 32px;
+	background-color: #eb4d55;
+	font-size: 30px;
+	font-weight: 400;
+	font-family:  'Lato', sans-serif;
+}
+.s-btn{text-align: left; margin-left: -75px; margin-bottom: 270px;}
+.btn-outline:hover{background-color:white; color: #e8565e;}
+
+/*  */
+
+.footer-section{background:#292929; background-repeat: no-repeat; background-size: cover;}
+.footer{ flex-wrap: wrap; flex-direction:row;}
+.about-us{width: 25%;}
+.ab-1{width: 100%; font-family: Grand Hotel; font-size: 80px; color: #FFF;}
+.a-1{width: 25%;}
+.s-1{width: 25%;}
+.f-1{width:25%;}
+.ab-c{font-family:  'Lato', sans-serif; color: #FFF; text-align: left;}
+.f-u{display: block;margin: 0 80px; justify-content: space-between;}
+.f-u li{ font-size: 20px; font-family: sans-serif; color: #FFF; margin-bottom: 20px;}
+#a1{font-family: Grand Hotel;  font-size: 35px; font-weight: 500;}
+
+
+
+/* media Query */
+
+@media screen and (max-width: 1199px) and (min-width:991px) {
+section{padding: 10px; padding-top: 60px; padding-bottom: 60px; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover;}
+.container{position: relative; max-width: 1199px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; z-index: 99;}
+	
+	/* nav */
+.nav-section{position: relative; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover; z-index: -1; padding: 10px;}
+	
+.nav-section::before{width: 100%;height: 100%;top:0;bottom: 0;left: 0;right: 0;position: absolute;background-color: #e93a42;content: '';opacity:0.8;
+					background-position: bottom;background-repeat: no-repeat;background-size: cover;z-index: 10;}
+
+.nev .nev-link:hover,
+.nev .nev-link.active:hover{color:#FFF; outline: 1px solid; border-radius: 25px; z-index: 99; cursor: pointer;} 
+
+.logo-img {text-align: center;}
+.logo{width: 300px; height: 180px;}
+
+.nev-bar {display: flex;justify-content: center;padding: 0;gap: 10px 80px;margin-bottom: 25px;}
+
+.del-0{color: #FFF; font-family: grand hotel; font-size: 230px; text-align: center; font-weight: 400;}
+.label{text-align: center;font-size: 20px;color: #ffffff;font-weight: 400;font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+/* pop */
+
+.c-1{text-align: center; margin-bottom: 80px; font-family: 'Lato', sans-serif; font-size: 30px; color: #3d3d3d; padding: 12px 150px 12px 150px;}
+.card-img{justify-content: center;gap: 10px 170px; padding: 5px;}
+.imgs{width: 220px;height: 220px; border-radius: 50%;}
+
+
+.card-content{justify-content: center;margin-top: 20px;gap: 10px 190px;	}
+
+.card-content h3{font-size: 50px;color: #e8565e;font-weight: 400;font-family: "Grand Hotel";}
+
+.c-content{font-family:  'Lato', sans-serif;font-weight: 400;text-align: center;gap: 10px 90px;margin-top: 25px;margin-bottom: 25px;color: #3d3d3d;
+}
+/* menu */
+
+.m-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 150px; font-size: 30px;color: #3d3d3d;padding: 12px 150px 12px 150px;}
+
+/* package */
+.slide-container{max-width:1320px; width:100%; background-color:#ede5cb}
+.P-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 100px; font-size: 30px;color: #3d3d3d; padding: 12px 150px 12px 150px;}
+
+/* slide */
+
+.slide{margin-top: 200px;font-size: 80px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;margin-bottom: 30px;}
+
+/*  */
+
+.cont-1{text-align: center;font-family: 'Lato', sans-serif;font-weight: 400;margin-top: 12px;font-size: 30px;color: #FFF; padding: 12px 150px 12px 150px;}
+
+.count{justify-content: center;gap: 10px 100px; padding: 10px; flex-wrap: wrap;}
+
+.b1{ height: 250px;width: 250px;color: #FFF;border: 7px dashed;border-radius: 50%;margin-top: 170px;margin-bottom: 130px;text-align: center;font-size: 60px;display: flex;justify-content: center;align-items: center;}
+
+.count-1{padding: 0 50px ; }
+
+/* package menu */
+
+.carded{justify-content: space-between; margin-bottom: 120px;  }
+.C-1{border-radius: 20px ;background-color: #f9f5e3; margin: 0 20px;}
+.Card-img{text-align: center;}
+.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+
+.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+.button:hover{background-color:white; color: #e8565e; }
+.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+.c-dis{ font-family:  'Lato', sans-serif; text-align: center;}
+
+/* chief */
+
+.ch-C{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+
+/* search */
+
+.S-btn{ margin-left: -70px; padding-left: 70px; margin-bottom: 270px;}
+/* sub */
+
+.con-sub{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+
+/* footer */
+
+.footer{ flex-wrap: wrap; padding: 10px;}
+.f-u{ display: block; margin: 0 50px; justify-content: space-between;}
+
+/*  */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 991px)  and (min-width:767px){
+	section{ padding-top: 50px; padding-bottom: 50px; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover;}
+	.container{position: relative; max-width: 991px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; z-index: 99;}
+/*  */
+	/* nav */
+	.nav-section{position: relative; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover; z-index: -1; padding: 10px;}
+	
+	.nav-section::before{width: 100%;height: 100%;top:0;bottom: 0;left: 0;right: 0;position: absolute;background-color: #e93a42;content: '';opacity:0.8;
+						background-position: bottom;background-repeat: no-repeat;background-size: cover;z-index: 10;}
+	
+	
+	.nev .nev-link:hover,
+	.nev .nev-link.active:hover{color:#FFF; outline: 1px solid; border-radius: 25px;} 
+						
+	.logo-img {text-align: center;}
+	.logo{width: 260px; height: 150px;}
+	
+	.nev-bar {display: flex;justify-content: center;padding: 0;gap: 10px 80px;margin-bottom: 25px;}
+	
+	.del-0{color: #FFF; font-family: grand hotel; font-size: 230px; text-align: center; font-weight: 400;}
+	.label{text-align: center;font-size: 20px;color: #ffffff;font-weight: 400;font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	/* pop */
+	
+	.c-1{text-align: center; margin-bottom: 80px; font-family:  'Lato', sans-serif; font-size: 30px; color: #3d3d3d; padding: 12px 150px 12px 150px;}
+	.card-img{justify-content: center;gap: 10px 120px; padding: 5px;}
+	.imgs{width: 220px;height: 220px; border-radius: 50%;}
+	
+	
+	.card-content{justify-content: center;margin-top: 20px;gap: 10px 150px;	}
+	
+	.card-content h3{font-size: 50px;color: #e8565e;font-weight: 400;font-family: "Grand Hotel";}
+	
+	.c-content{font-family:  'Lato', sans-serif;font-weight: 400;text-align: center;gap: 10px 90px;margin-top: 25px;margin-bottom: 25px;color: #3d3d3d;
+	}
+	/* menu */
+	
+	.m-1{font-family: 'Lato', sans-serif; text-align: center; margin-bottom: 150px; font-size: 30px;color: #3d3d3d;padding: 12px 150px 12px 150px;}
+	
+	/* package */
+	
+	.P-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 100px; font-size: 30px;color: #3d3d3d; padding: 12px 150px 12px 150px;}
+	
+	/* slide */
+	
+	.slide{margin-top: 200px;font-size: 80px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;margin-bottom: 30px;}
+	.s-content{text-align: left; margin-top: 15px; margin-bottom: 15px;}
+	.P{font-family:  'Lato', sans-serif; color: #3d3d3d; font-size: 20px;}
+	.S-btn a{color: #FFF; font-weight: bolder;}
+	.S-btn{text-align: left; margin-right: 20px; margin-top: 40px; margin-bottom: 270px;}
+	.s-start-btn{ font-family:  'Lato', sans-serif;color: #FFF; background-color:#eb4d55;text-decoration:none; font-weight: 400; border-radius: 15px;padding: 10px 50px 10px 50px;white-space: nowrap;font-size: 14px;text-decoration: none;}
+	.s-start-btn:hover{background-color: #FFF; color:#eb4d55; border: none;}
+	
+	/* package */
+	.slide-container{max-width:1120px; width:100%; background-color:aliceblue; padding: 40px 0;}
+	
+	.cont-1{text-align: center;font-family:  'Lato', sans-serif;font-weight: 400;margin-top: 12px;font-size: 30px;color: #FFF; padding: 12px 150px 12px 150px;}
+	
+	.count{justify-content: center;gap: 10px 100px; padding: 10px; flex-wrap: wrap;}
+	
+	.b1{ height: 200px;width: 200px;color: #FFF;border: 7px dashed;border-radius: 50%;margin-top: 170px;margin-bottom: 130px;text-align: center;font-size: 50px;display: flex;justify-content: center;align-items: center;}
+	
+	.count-1{padding: 0 50px ; }
+	
+	/* package menu */
+	
+	.carded{justify-content: space-between; margin-bottom: 120px;  }
+	.C-1{border-radius: 20px ;background-color: #f9f5e3; margin: 0 5px;}
+	.Card-img{text-align: center;}
+	.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+	
+	.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+	.button:hover{background-color:white; color: #e8565e; }
+	.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+	.c-dis{ font-family:  'Lato', sans-serif; text-align: center;}
+	
+	/* chief */
+	
+	.ch-C{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	
+	/* search */
+	
+	
+	
+	/* sub */
+	
+	.con-sub{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	
+	/* footer */
+	
+	.footer{ flex-wrap: wrap; padding: 10px;}
+	.f-u{ display: block; margin: 0 30px; justify-content: space-between;}
+	/*  */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) and (min-width:575px) {
+	section{ padding-top: 30px; padding-bottom: 30px; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover;}
+	.container{position: relative; max-width: 767px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; z-index: 99;}
+  
+	.nav-section{position: relative; background-image: url(../images/nav.jpg); background-repeat: no-repeat; background-size: cover; z-index: -1; padding: 10px;}
+	
+	.nav-section::before{width: 100%;height: 100%;top:0;bottom: 0;left: 0;right: 0;position: absolute;background-color: #e93a42;content: '';opacity:0.8;
+						background-position: bottom;background-repeat: no-repeat;background-size: cover;z-index: 10;}
+	
+	.logo-img {text-align: center;}
+	.logo{width: 220px; height: 110px;}
+	
+	.nav-bar {display: flex;justify-content: center;padding: 0;gap: 10px 50px;margin-bottom: 25px;}
+	
+	.del-0{color: #FFF; font-family: grand hotel; font-size: 200px; text-align: center; font-weight: 400;}
+	.label{text-align: center;font-size: 20px;color: #ffffff;font-weight: 400;font-family:  'Lato', sans-serif; padding: 12px 120px 12px 120px;}
+
+	/* popular */
+	.p-1{padding-top: 100px;font-size: 105px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+	.c-1{text-align: center; margin-bottom: 80px; font-family:  'Lato', sans-serif; font-size: 20px; color: #3d3d3d; padding: 12px 120px 12px 120px;}
+	
+	
+
+
+	.card{display: block; justify-content: center;justify-content: space-between;}
+	.imgs{width: 150px;height: 150px; border-radius: 50%; }
+	.cd-img{text-align: center;}
+	.cd-content{text-align: center;}
+
+	.cd-content h3{font-size: 30px;	color: #e8565e;font-weight: 400;font-family: "Grand Hotel";}
+	.c-content{font-family:  'Lato', sans-serif;	font-weight: 400;text-align: center;padding: 20px;justify-content: space-between;margin-top: 25px;margin-bottom: 25px;color: #3d3d3d;}
+
+	/* state */
+	.stat{
+		padding-top: 70px;font-size: 95px;color: #FFF;
+		font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+	.cont-1{text-align: center;font-family:  'Lato', sans-serif;font-weight: 400;margin-top: 12px;font-size: 20px;color: #FFF; padding: 12px 120px 12px 120px;}
+	
+	.count{justify-content: center;gap: 10px 50px; padding: 10px; flex-wrap: wrap;}
+	
+	.b1{ height: 180px;width: 180px;color: #FFF;border: 7px dashed;border-radius: 50%;margin-top: 170px;margin-bottom: 130px;text-align: center;font-size: 40px;display: flex;justify-content: center;align-items: center;}
+	
+	.count-1{padding: 0 50px ; }
+	/* menu */
+	.Menu{font-size: 95px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+	.card1,.card2,.card3,.card4{width: 50%; display: block; text-align: center; gap: 10px 10px;}
+	.m-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 150px; font-size: 25px;color: #3d3d3d;padding: 12px 120px 12px 120px;}
+	
+	/* our menu */
+	.m-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 150px; font-size: 25px;color: #3d3d3d;}
+	.Menu{font-size: 95px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+	.carded{justify-content: space-between; margin-bottom: 120px;}
+	.Crd-wrapper{flex-wrap: wrap; justify-content: center; gap: 30px 20px ; }
+	.C-1{border-radius: 20px ;background-color: #f9f5e3; }
+	.Card-img{text-align: center;}
+	.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+	
+	.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+	.button:hover{background-color:white; color: #e8565e; }
+	.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+	.c-dis{ font-family:  'Lato', sans-serif; text-align: center;}
+	
+	/* slide */
+	
+	.slide{margin-top: 200px;font-size: 80px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;margin-bottom: 30px;}
+	.s-content{text-align: left; margin-top: 15px; margin-bottom: 15px;}
+	.P{font-family:  'Lato', sans-serif; color: #3d3d3d; font-size: 20px;}
+	.S-btn a{color: #FFF; font-weight: bolder;}
+	.S-btn{text-align: left; margin-right: 20px; margin-top: 40px; margin-bottom: 270px;}
+	.s-start-btn{ font-family:  'Lato', sans-serif;color: #FFF; background-color:#eb4d55;text-decoration:none; font-weight: 400; border-radius: 15px;padding: 10px 50px 10px 50px;white-space: nowrap;font-size: 14px;text-decoration: none;}
+	.s-start-btn:hover{background-color: #FFF; color:#eb4d55; border: none;}
+	
+	/*  */
+	
+	
+	
+	/* package menu */
+	.P-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 100px; font-size: 25px;color: #3d3d3d;}
+	.P-m{font-size: 105px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+	.carded{justify-content: space-between; margin-bottom: 120px;  }
+	.C-1{border-radius: 20px ;background-color: #f9f5e3; margin: 0 5px;}
+	.Card-img{text-align: center;}
+	.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+	
+	.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+	.button:hover{background-color:white; color: #e8565e; }
+	.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+	.c-dis{ font-family:  'Lato', sans-serif; text-align: center;}
+	
+	/* chief */
+	
+	.ch-C{text-align: center; font-size: 25px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	.se-l{
+		border-radius:35px;
+		width:450px;
+		border: none;
+		height: 32px;
+		background-color: #ffffff;
+		padding: 15px;
+	}
+	.ch-R{text-align: center; font-size: 90px; font-weight: 400; font-family: Grand Hotel; color: #e8565e; margin-bottom: 150px;}
+	.con-sub p{text-align: center; font-size: 25px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif;}
+	.btn-outline{
+		border: none;
+		color: #FFF;
+		width: 170px;
+		height: 62px;
+		border-radius: 32px;
+		background-color: #eb4d55;
+		font-size: 25px;
+		font-weight: 400;
+		font-family: sans-serif;
+	}
+	/* search */
+	
+	
+	
+	/* sub */
+	
+	.con-sub{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	
+	/* footer */
+	
+	.footer-section{background:#292929; background-repeat: no-repeat; background-size: cover;}
+	.footer{ flex-wrap: wrap; padding: 5px;}
+	.about-us{width: 20%;}
+	.ab-1{width: 21%; font-family: Grand Hotel; font-size: 50px; color: #FFF;}
+	.s-1{width: 21%;}
+	.f-1{width:21%;}
+	.ab-c{font-family:  'Lato', sans-serif; color: #FFF; text-align: left;}
+	.f-u{display: block; margin: 0 50px; justify-content: space-between;}
+	.f-u li{ font-size: 18px; font-family:  'Lato', sans-serif; color: #FFF; margin-bottom: 20px;}
+	#a1{font-family: Grand Hotel;  font-size: 25px; font-weight: 500;}
+	/* .footer{ flex-wrap: wrap; padding: 10px;}
+	.f-u{ display: block; margin: 0 30px; justify-content: space-between;} */
+} 
+@media only screen and (max-width: 575px) {
+
+	.container{position: relative; max-width: 575px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; z-index: 99;}
+
+	
+	
+	
+	.logo-img {text-align: center;}
+	.logo{width: 220px; height: 110px;}
+	
+	.nev-bar {display: flex;justify-content: center;padding: 0;gap: 10px 20px;margin-bottom: 25px;}
+	/*  */
+	
+
+	
+	/* label.logo{font-size: 30px; padding-left: 50px;}
+    .nev,.nev-bar ,li ,.nev-link{font-size: 16px; }
+
+	.checkbtn{display: block;}
+    .nav-bar{position: fixed; width: 100%; height: 100vh;background-color: #2c3e50; top:80px; text-align: center; transition: all .5s; z-index: 99;}
+    .nev ,.nev-bar ,li{display: block; margin: 50px 0; line-height: 30px;}
+    .nev ,.nav-bar ,li ,.nev-link{ font-size: 20px;}
+    a.active,a:hover {outline: 1px solid white; transition: .5s;}
+    #check:checked ~ .nev-bar{ left: 0;} */
+
+	/*  */
+	.del-0{color: #FFF; font-family: grand hotel; font-size: 150px; text-align: center; font-weight: 400;}
+	.label{text-align: center;font-size: 20px;color: #ffffff;font-weight: 400;font-family:  'Lato', sans-serif; padding: 10px 120px 12px 120px;}
+
+	/* pop */
+	
+	.c-1{text-align: center; margin-bottom: 80px; font-family: 'Lato', sans-serif; font-size: 30px; color: #3d3d3d;}
+	
+	.p-1{padding-top: 100px;font-size: 90px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+
+	.c-1{text-align: center; margin-bottom: 80px; font-family:  'Lato', sans-serif; font-size: 20px; color: #3d3d3d; padding: 12px 120px 12px 120px;}
+	
+	
+	.card-content h3{font-size: 32px;color: #e8565e;font-weight: 400;font-family: "Grand Hotel";}
+	
+	.c-content{font-family:  'Lato', sans-serif;font-weight: 400;text-align: center;gap: 10px 30px;margin-top: 25px;margin-bottom: 25px;color: #3d3d3d;}
+
+	/* state */
+	.stat{padding-top: 70px;font-size: 90px;color: #FFF;font-weight: 400;font-family: Grand Hotel;text-align: center;margin-bottom: 50px;}
+
+	.cont-1{text-align: center; font-family:  'Lato', sans-serif;font-weight: 400;margin-top: 12px;font-size: 20px;color: #FFF; padding: 12px 120px 12px 120px;}
+	
+	.count{display: flex; margin: 0 auto;}
+	
+	.b1{ height: 160px;width: 160px;color: #FFF;border: 7px dashed;border-radius: 50%;margin-top: 20px;margin-bottom: 10px;text-align: center;font-size: 40px;display: flex;justify-content: center;align-items: center;}
+	
+	
+	/* menu */
+	.menu-section{background: #ede5cb; background-repeat: no-repeat; background-size: cover; z-index: 10;}
+
+	.Menu{font-size: 95px;color: #e8565e;font-weight: 30;font-family: Grand Hotel;text-align: center;margin-bottom: 10px;}
+
+	.cards{flex-wrap: wrap;flex-direction: column; align-content: center; margin-bottom: 70px;}
+
+	.mb-4{margin-bottom: 80px;}
+
+	
+
+	.n-1{font-size: 20px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;line-height: 70px;}
+
+	.p{font-family:  'Lato', sans-serif; color: #3d3d3d;}
+
+	.card1,.card2,.card3,.card4{width: 50%; display: block; text-align: center;}
+	.m-1{font-family:  'Lato', sans-serif; text-align: center; margin-bottom: 50px; font-size: 15px;color: #3d3d3d;padding: 12px 120px 12px 120px;}
+	
+	/* package menu */
+	
+	.carded{justify-content: space-between; margin-bottom: 120px;}
+	.Crd-wrapper{flex-wrap: wrap; justify-content: center; gap: 30px 20px ; }
+	.C-1{border-radius: 20px ;background-color: #f9f5e3; }
+	.Card-img{text-align: center;}
+	.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+	
+	.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+	.button:hover{background-color:white; color: #e8565e; }
+	.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+	.c-dis{ font-family:  'Lato', sans-serif; text-align: center;}
+	/* slide */
+	
+	.slide{margin-top: 200px;font-size: 50px;color: #e8565e;font-weight: 400;font-family: Grand Hotel;margin-bottom: 30px;}
+	.s-content{text-align: left; margin-top: 15px; margin-bottom: 15px;}
+	.P{font-family:  'Lato', sans-serif; color: #3d3d3d; font-size: 10px;}
+	.S-btn a{color: #FFF; font-weight: bolder;}
+	.S-btn{text-align: left; margin-right: 20px; margin-top: 40px; margin-bottom: 270px;}
+	.s-start-btn{ font-family:  'Lato', sans-serif;color: #FFF; background-color:#eb4d55;text-decoration:none; font-weight: 400; border-radius: 15px;padding: 10px 50px 10px 50px;white-space: nowrap;font-size: 14px;text-decoration: none;}
+	.s-start-btn:hover{background-color: #FFF; color:#eb4d55; border: none;}
+	
+	/*  */
+	
+	
+	
+	/* package menu */
+	
+	.carded{justify-content: space-between; margin-bottom: 120px;  }
+	.C-1{border-radius: 20px ;background-color: #f9f5e3; margin: 0 5px;}
+	.Card-img{text-align: center;}
+	.Card-img,.crd-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+	
+	.button{border: none; font-size: 16px; padding: 10px 100px; background: #e8565e; margin: 12px; color: #FFF; border-radius: 4px; border-radius: 25px;}
+	.button:hover{background-color:white; color: #e8565e; }
+	.c-name{font-family: Grand Hotel; color: #e8565e; font-weight: 400; font-size: 40px;}
+	.c-dis{ font-family:  'Lato', sans-serif; text-align: center;}
+	
+	/* chief */
+	
+	.ch-C{text-align: center; font-size: 20px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	.con-sub p{text-align: center; font-size: 20px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family: 'Lato', sans-serif;}
+	.se-l{
+	
+		border-radius:35px;
+		width:400px;
+		border: none;
+		height: 32px;
+		background-color: #ffffff;
+		padding: 15px;
+	}
+
+	.btn-outline{
+		border: none;
+		color: #FFF;
+		width: 150px;
+		height: 62px;
+		border-radius: 32px;
+		background-color: #eb4d55;
+		font-size: 20px;
+		font-weight: 400;
+		font-family:  'Lato', sans-serif;
+	}
+	/* search */
+	
+	
+	
+	/* sub */
+	
+	.con-sub{text-align: center; font-size: 30px; font-weight: 400; color: #3d3d3d; margin-bottom: 70px; font-family:  'Lato', sans-serif; padding: 12px 150px 12px 150px;}
+	
+	/* footer */
+	
+	.footer-section{background:#292929; background-repeat: no-repeat; background-size: cover;}
+	.footer{ flex-wrap: wrap; padding: 5px;}
+	.about-us{width: 100%;}
+	.ab-1{width: 100%; font-family: Grand Hotel; font-size: 50px; color: #FFF;}
+	.a-1{width: 20%;}
+	.s-1{width: 25%;}
+	.f-1{width: 25%;}
+	.ab-c{font-family: sans-serif; color: #FFF; text-align: left;}
+	.f-u{display: block; margin: 25px 10px; justify-content: space-between;}
+	.f-u li{ font-size: 18px; font-family:  'Lato', sans-serif; color: #FFF; margin-bottom: 20px;}
+	#a1{font-family: Grand Hotel;  font-size: 25px; font-weight: 500;}
+	/* .footer{ flex-wrap: wrap; padding: 10px;}
+	.f-u{ display: block; margin: 0 30px; justify-content: space-between;} */
+} 

@@ -1,0 +1,63 @@
+
+body{background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);}
+.container{max-width: 1120; top: 0; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); }
+.align-items-center {align-items: center!important;}
+.justify-content-center {justify-content: center!important;}
+.d-flex {display: flex!important;}
+/*  */
+
+.b-type{margin-top: 25px; display: flex; justify-content: center;}
+.cd{margin: 10px;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgb(43, 92, 228);}
+.title{font-weight: bolder; font-size: 20px;}
+.bb{margin: 12px 12px 20px 40px; }
+
+/*  */
+
+.head,.hh{ padding: 10px; align-items: center; justify-content: center;}
+.head{display: flex;  background: rgb(63,94,251);background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); color: #FFF; font-size: 50px; border: 1px solid; opacity: 0.9; }
+.img-gv{ align-items: center; width: 60px; height: 60px; padding: 12px;}
+
+/*  */
+.slinding{ min-height: 100vh; display: block; align-items: center; justify-content: center; background-color: #efefef;}
+
+.slide-container{max-width:1120px; width:100%;  padding: 40px 0;}
+.image-content{position: relative; row-gap: 5px; padding: 25px 0;}
+
+.slide-content{margin: 0 40px; padding: 45px 20px; overflow: hidden; border-radius: 25px;}
+
+.image-content,.card-content{display: flex; flex-direction: column; align-items: center; padding: 10px 14px; }
+
+.card{border-radius: 25px; background-color: #FFF;}
+.card-image{ position: relative; height:150px; width:150px; background: #FFF; padding: 3px;}
+
+.swiper-navbtn{color: aquamarine;}
+.swiper-navbtn:hover{color: aqua;}
+.swiper-navbtn::before,
+.swiper-navbtn::after{font-size: 40px;}
+.swiper-button-next{right: 0;}
+.swiper-button-prev{left: 0;}
+.swiper-pagination.bullet{
+    background-color: aquamarine;
+    opacity: 1;
+}
+/*  */
+.accordion{margin: 40px; background-color: violet;}
+
+.bttn{ margin: 20px;} 
+
+/*Arrow  */
+
+.back-to-top i {font-size: 28px;color: #fff;line-height: 0;}
+.back-to-top.active {visibility: visible;opacity: 1;}
+.back-to-top {position: fixed;visibility: hidden;opacity: 0;right: 15px;bottom: 15px;z-index: 996;text-decoration: none; background: #009cea;width: 40px;height: 40px;border-radius: 4px;transition: all 0.4s;}
+
+form{display: block; border: 1px solid; padding: 100px;}
+
+.pregress{display: block; border: 1px solid; padding: 100px;}
+.scrollbar{display: block; border: 1px solid; padding: 100px;}
+.flex{display: block; border: 1px solid; padding: 100px;}
+.align{display: block; border: 1px solid; padding: 100px;}
+
+
+.a-1{ height: 50px;}
+
