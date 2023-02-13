@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+    <!--  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <!--  -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 gap-5 px-5">
+                  <li class="nav-item"><a class="nav-link active1" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                  <li class="nav-item "><a class="nav-link" href="#" aria-expanded="false">Service</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Help</a></li>
+                </ul>
+                <div class="input d-flex align-items-center ">
+                  <input class="w-100 form-control search-in" type="text" placeholder="Search your items here">
+                  <!-- <i class="fa fa-search icon" aria-hidden="true"></i> -->
+                  <i class="fa-solid fa-magnifying-glass icon"></i>
+                  <button type="button" class="btn mx-4 col-lg-3 border-danger btn-outline-danger rounded-0">ORDER NOW</button>
+                </div>                 
+                <!-- <button class="btn btn-outline-success mx-4" type="submit">Search</button> -->           
+            </div>
+          </div>
+        </nav>        
+      </header>
+      <section>      
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./assets/images/bg-1.png" alt="" class="img-fluid" height="850" width="1920">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/bg-2.png" alt="" class="img-fluid" height="850" width="1920">
+                      </div>                      
+                    </div>
+                    <div class="swiper-button-next"><img src="./assets/images/arrow-1.png" alt=""><!-- <i class="fa-solid fa-arrow-right-long icn"> --></i></div>
+                    <div class="swiper-button-prev "><img src="./assets/images/arrow-2.png" alt=""><!-- <i class="fa-solid fa-arrow-left-long icn"> --></i></div>
+                    <div class="swiper-pagination page font-family-como"></div> 
+                </div>
+      
+      </section>
+      <section class="pt-5 mt-lg-5 mb-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h2 class="font-family-como txt-clr f-48">Lorem ipsum dolor sit amet</h2>
+                    <p class="font-family-lato ptxt-clr col-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="font-family-jose fw-semibold text-decoration-none font-clr ">Explore More</a><span class="px-2"><img src="./assets/images/arr-3.png" alt="" class=""> <!-- <i class="fa-solid fa-arrow-right"></i> --></span>
+                </div>
+                <div>
+                    <img src="./assets/images/nex-1.png" alt="" class="img-fluid" height="411" width="512">
+                </div>                    
+            </div>
+            <div class="d-flex justify-content-center bg-white nx-img">
+                <div class="p-4 bg-white">
+                    <img src="./assets/images/nex-2.png" alt="" class="img-fluid" height="411" width="512">
+                </div>
+            </div>
+            <div class="text-center">
+                <h2 class="font-family-como txt-clr f-48">Lorem ipsum dolor sit amet</h2>
+                <p class="mx-auto font-family-lato ptxt-clr col-7 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+                
+      </section>
+      <section class="pt-lg-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4">
+                    <img src="./assets/images/crd-1.png" alt="" class="img-fluid position-relative " height="512" width="417">
+                    <h2 class="text-center font-family-como col-2 text-white crd-txt position-absolute f-32">Lorem ipsum dolor</h2>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assets/images/crd-2.png" alt="" class="img-fluid position-relative " height="512" width="417">
+                    <h2 class="text-center font-family-como col-2 text-white crd-txt position-absolute f-32">Lorem ipsum dolor</h2>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assets/images/crd-3.png" alt="" class="img-fluid position-relative" height="512" width="417">
+                    <h2 class="text-center font-family-como col-2 text-white crd-txt position-absolute f-32">Lorem ipsum dolor</h2>
+                </div>
+            </div>
+            <div class="pt-4 text-center">
+                <button type="button" class="btn btn-danger rounded-0 ">View More</button>
+            </div>
+        </div>
+      </section>
+      <section class="mt-lg-5 pt-lg-5 video_img">
+
+        <div class="playbtn position-absolute">
+          <i class="fa-regular fa-circle-play text-white"></i>
+        </div>
+        <div >
+          <div >
+            <!-- <div class="close-btn">
+          </div -->
+           <!--  <video width="320" height="240" controls autoplay class="">
+              <source src="./assets/video/video.mp4" type="video/mp4" class=" object-fit-cover" >                              
+          </video> -->
+         
+        </div>
+
+      </section>
+      <section class="bg-img pt-lg-5">
+        <div class="container pt-lg-5 ">
+            <div class="text-center">
+              <h2 class="font-family-como txt-clr f-48">Lorem ipsum dolor sit amet</h2>
+              <p class="mx-auto font-family-lato ptxt-clr col-7 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+        
+              <div class="pt-5">
+                <div class="slick-slider card-group rounded-0 gap-4 mx-auto">
+                  <div class="card rounded-0">
+                    <img src="./assets/images/sli-1.png" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body crd-bg p-5">
+                      <h5 class="card-title font-family-como txt-clr f-40">Lorem Ipsum</h5>
+                      <p class="font-family-inter f-18">01.02.2023</p>
+                      <p class="card-text font-family-lato f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    
+                  </div>
+                  <div class="card">
+                    <img src="./assets/images/sli-2.png" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body crd-bg p-5">
+                      <h5 class="card-title font-family-como txt-clr f-40">Lorem Ipsum</h5>
+                      <p class="font-family-inter f-18">01.02.2023</p>
+                      <p class="card-text font-family-lato f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>                    
+                  </div>
+                  <div class="card rounded-0">
+                    <img src="./assets/images/sli-1.png" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body crd-bg p-5">
+                      <h5 class="card-title font-family-como txt-clr f-40">Lorem Ipsum</h5>
+                      <p class="font-family-inter f-18">01.02.2023</p>
+                      <p class="card-text font-family-lato f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    
+                  </div>
+                  <div class="card">
+                    <img src="./assets/images/sli-2.png" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body crd-bg p-5">
+                      <h5 class="card-title font-family-como txt-clr f-40">Lorem Ipsum</h5>
+                      <p class="font-family-inter f-18">01.02.2023</p>
+                      <p class="card-text font-family-lato f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center pt-4 gap-5 ">
+                  <img src="./assets/images/sli-arrow.png" alt="" class="arow-img">
+                  <img src="./assets/images/ali-arrow-2.png" alt="" class="arow-img">
+                </div>
+                
+              </div>
+        </div>
+      </section>
+      <section class="pt-lg-5 mt-lg-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="font-family-como txt-clr f-48">Lorem ipsum dolor sit amet</h2>
+              <p class="mx-auto font-family-lato ptxt-clr col-7 text-center f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+      </section>
+      <section class="pt-lg-5 mt-lg-5">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="font-family-como txt-clr f-48">Lorem ipsum dolor sit amet</h2>
+            <p class="mx-auto font-family-lato ptxt-clr col-7 text-center f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="pt-5 row col-12">
+            <div class="col-6 text-center">
+              <img src="./assets/images/plate-1.png" alt="" height="300" width="446">
+              <h3 class="font-family-como pt-2 txt-clr f-40">Lorem ipsum</h3>
+              <p class="ptxt-clr col-8 mx-auto f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-6 text-center">
+              <img src="./assets/images/plate-2.png" alt="" height="300" width="520">
+              <h3 class="font-family-como pt-2 txt-clr f-40">Lorem ipsum</h3>
+              <p class="ptxt-clr col-8 mx-auto f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-lg-5 mt-lg-5">
+        <div class="text-center pb-5">
+          <h2 class="font-family-como txt-clr f-48">Lorem ipsum form</h2>
+        </div>
+        <div class="form-bg">
+          <div class="container-f p-5 form-content"> 
+            <div class="d-flex ">
+                <div class="w-50">
+                  <img src="./assets/images/form-img.png" alt="" class="rounded">
+                </div>
+                <div class="form_clr w-50 rounded p-5 ">
+                  <form action="" class="needs-validation d-flex flex-column ">
+                    <input type="text" class="form-control bg-transparent border-0 border-bottom rounded-0 border-dark" placeholder="Your name" aria-label="Your name">
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                    <input type="email" class="form-control bg-transparent border-0 border-bottom rounded-0 border-dark " id="email" placeholder="Your Email">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                    <input type="number" class="form-control bg-transparent border-0 border-bottom rounded-0 border-dark" id="m-number" placeholder="Your Contact Number" required>
+                    <div class="invalid-feedback">
+                      Valid mobile number is required.
+                    </div>
+                    <input type="number" class="form-control bg-transparent border-0 border-bottom rounded-0 border-dark" id="p-number" placeholder="Number Of Persons" required>
+                    <div class="invalid-feedback">
+                      Valid Persons number is required.
+                    </div>
+                    <input type="date" class="form-control bg-transparent border-0 border-bottom rounded-0 border-dark" id="date"  value required placeholder="Book Date">
+                    <div class="invalid-feedback">
+                        Valid date is required.
+                    </div>
+                    <input type="time" class="form-control bg-transparent border-0 border-bottom rounded-0 border-dark" id="time"  value required placeholder="Your Time">
+                    <div class="invalid-feedback">
+                        Valid time is required.
+                    </div>
+                    <div class="col-12 text-left pt-3">
+                      <button type="submit" class="btn btn-primary col-lg-3 font-inter rounded-0 bg-danger border-0">Book Now</button>
+                    </div>
+                  </form>
+                </div>                
+            </div>
+        </div>
+        </div>
+      </section>
+      <section class="pt-lg-5">
+        <div>
+          <div class="text-center pb-5">
+            <h2 class="font-family-como txt-clr f-48">Lorem ipsum</h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="text-center">
+            <h2 class="font-family-como txt-clr f-48">Lorem ipsum dolor</h2>
+            <p class="mx-auto font-family-lato ptxt-clr col-8 text-center f-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="slick-slider card-group rounded-0 gap-4 mx-auto pt-5">
+            <div class="card rounded-0 crd-bg p-5">
+              <img src="./assets/images/chief-1.png" class="card-img-top mx-auto rounded-circle" alt="..." width="121" height="118">
+              <div class="card-body mt-2">
+                <p class="card-text text-center font-family-lato f-18 fst-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <h5 class="card-title font-family-como text-danger f-24 text-center">Lorem ipsum</h5>
+              </div>                
+            </div>
+            <div class="card rounded-0 crd-bg p-5">
+              <img src="./assets/images/chief-2.png" class="card-img-top mx-auto rounded-circle " alt="..." width="121" height="118">
+              <div class="card-body mt-2">
+                <p class="card-text text-center font-family-lato f-18 fst-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <h5 class="card-title font-family-como text-danger f-24 text-center">Lorem ipsum</h5>
+              </div>                
+            </div>
+            <div class="card rounded-0 crd-bg p-5">
+              <img src="./assets/images/chief-1.png" class="card-img-top mx-auto rounded-circle" alt="..." width="121" height="118">
+              <div class="card-body mt-2">
+                <p class="card-text text-center font-family-lato f-18 fst-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <h5 class="card-title font-family-como text-danger f-24 text-center">Lorem ipsum</h5>
+              </div>                
+            </div>
+            <div class="card rounded-0 crd-bg p-5">
+              <img src="./assets/images/chief-2.png" class="card-img-top mx-auto rounded-circle" alt="..." width="121" height="118">
+              <div class="card-body mt-2">
+                <p class="card-text text-center font-family-lato f-18 fst-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <h5 class="card-title font-family-como text-danger f-24 text-center">Lorem ipsum</h5>
+              </div>                
+            </div>
+          </div>
+          <div class="d-flex justify-content-center pt-4 gap-5 ">
+            <img src="./assets/images/sli-arrow.png" alt="" class="arow-img">
+            <img src="./assets/images/ali-arrow-2.png" alt="" class="arow-img">
+          </div>
+
+        </div>
+      </section>
+      
+      <section class="search-img pt-lg-5 mt-lg-5">
+        <div class="container">
+          <h2 class="font-family-como f-48 text-center text-white">Newsletter Sign Up</h2>
+          <div class=" pt-5 pb-5  form_cont mx-auto">
+            <p class="font-family-lato f-16 text-uppercase in-txt">Sign Up for news and special offers</p>
+            <div class=" d-flex gap-3 col-12 ">
+              <div class="w-75">
+                  <input type="email" class="f-m form-control bg-transparent border-0 border-bottom rounded-0 col-6" id="email" placeholder="Enter Email Address">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+              </div>
+              <div class="w-25">
+                 <button type="submit" class="btn btn-primary col-lg-6 font-inter rounded-0 bg-danger border-0">Book Now</button>
+              </div>
+            </div>           
+          </div>
+          
+        </div>
+      </section>
+      <footer class="pt-lg-5 crd-bg">
+        <div class="container">
+          <footer class="row pb-5 mx-auto col-12">
+            <div class="col-lg-5 col-sm-6  col-12">
+              <div><img src="./assets/images/logo.png" alt="" class="img-fluid"></div>
+              <div class="pt-3"> 
+                <h5 class="font-family-lato">Interessante Seiten</h5>         
+                <p class="f-18 font-family-lato pt-3 ptxt-clr">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical, May one Which life divide sea.</p>
+                <div class="w-100  pt-3">
+                  <ul class="nav f-u d-flex gap-3 ">
+                    <li class="fs-3"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="fs-3"><i class="fa-brands fa-linkedin"></i></li>
+                    <li class="fs-3"><i class="fa-brands fa-facebook"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-3 col-sm-3 col-lg-2  pt-2">
+              <h5 class="fs-28 text-dark font-family-como fw-bold">Contact Us</h5>
+              <p class="font-family-lato f-18 ptxt-clr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 776688-mumbai.</p>
+              <p class="font-family-inter f-18 ptxt-clr">+39  0472 647 122</p>
+              <p class="font-family-inter f-18 ptxt-clr">+39  0472 647 122</p>
+              
+            </div>
+
+            <div class=" col-12  col-lg-4 col-sm-4">
+              <div class="">
+                  <img src="./assets/images/foter-img.png" alt="" class="img-fluid" height="351" width="446">
+              </div>
+            </div>
+          </footer>
+          
+          
+    </div>
+    
+      </footer>
+      <section class="fot-clr">
+        <div class="py-2 text-center">
+          <p class="text-white">© 2023 Quiety Rights Reserved. Designed By LoremIpsum</p>
+        </div>
+      </section>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script>
+          function myFunction() {
+            document.getElementById("demo").innerHTML = "pop";
+          }
+        </script>
+</body>
+</html>
