@@ -34,19 +34,7 @@ $(document).ready(function(){
     
 });
 /*  */
-/* $(function(){
-  $(".grid").masonry({ itemSelector: ".grid-item" });
-  
-  $(".filtering").on("click", "span", function () {
-      var a = $(".gallery").isotope({});
-      var e = $(this).attr("data-filter");
-      a.isotope({ filter: e });
-  });
-  $(".filtering").on("click", "span", function () {
-      $(this).addClass("active").siblings().removeClass("active");
-  });
-}) */
-/*  */
+
 
 
   var swiper1 = new Swiper(".mySwiper", {
@@ -71,49 +59,40 @@ $(document).ready(function(){
     adaptiveHeight: true,
     slidesToScroll: 1,
     autoplay: false,    
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    infinite: true,
       // dots: false, Boolean
      // arrows: false, Boolean
    });
    /*  */
 
-/* var popovers = document.querySelectorAll('.popover');
-var popoverTriggers = document.querySelectorAll('.popover__trigger');
 
-for (var i = 0; i < popoverTriggers.length; i++) {
-	popoverTriggers[i].addEventListener('click', function(event) {
-		closeAllOthers(this.parentElement);
-		this.parentElement.classList.toggle('popover--active');
-	});
-}
+/* streams */
 
-function closeAllOthers(ignore) {
-	for (var i = 0; i < popovers.length; i++) {
-		if ( popovers[i] !== ignore) {
-			popovers[i].classList.remove('popover--active');	
-		}
-	}
-} */
-/* $(function() {
-  $('.popup-youtube, .popup-vimeo').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false
-  });
-}); */
+var streamsSlider = new Swiper('[data-slider="true"]', {
+  autoplay: false,
+  loop:true,
+  // pagination: {
+  //     el: '[data-streams-pagination]',
+  //     clickable: true,
+  // },
+  navigation: {
+      nextEl: '[data-next]',
+      prevEl: '[data-prev]',
+  },
+  slidesPerView: 1,
+spaceBetween: -80,
+  breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
+      350: {
+          slidesPerView: 2,
+      },
+      750: {
+          slidesPerView: 3,
+      }
+  }
+});
 
-/* $('.play-button').click(function(e){
-  var iframeEl = $('<iframe>', { src: $(this).data('url') });
-  $('#youtubevideo').attr('src', $(this).data('url'));
-})
 
-$('#close-video').click(function(e){
-  $('#youtubevideo').attr('src', '');
-}); 
-
-$(document).on('hidden.bs.modal','#myModal', function () {
-  $('#youtubevideo').attr('src', '');
-}); */ 
