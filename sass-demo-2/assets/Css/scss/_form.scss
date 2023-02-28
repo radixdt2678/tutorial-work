@@ -1,3 +1,4 @@
+@import 'mixin';
 @import 'color';
 
 form{
@@ -12,6 +13,9 @@ form{
     background: #FFFFFF;
     box-shadow: 0px 4px 11px rgb(137 137 137 / 15%);
     margin-top: 10px;
+    @include lg{
+        width: -webkit-fill-available;
+    }
 }
 .input2 {
     width: 92%;
@@ -21,14 +25,23 @@ form{
     background: #FFFFFF;
     box-shadow: 0px 4px 11px rgb(137 137 137 / 15%);
     margin-top: 10px;
+    @include lg{ 
+            width: -webkit-fill-available;
+    }
+    @include md {
+        align-items: center;
+    }
 }
 .input3 {
-    width: 366px;
+    width: 388px;
     padding: 10px;
     border: 1px solid #CFCFCF;
     background: #FFFFFF;
     box-shadow: 0px 4px 11px rgb(137 137 137 / 15%);
     margin-top: 10px;
+    @include lg {
+        width: -webkit-fill-available;
+    }
 }
 .input4 {
     font-size: 15px;

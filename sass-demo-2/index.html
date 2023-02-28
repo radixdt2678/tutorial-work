@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sass-demo-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./assets/Css/style.css">
 </head>
@@ -40,8 +41,8 @@
                 <h1 class="ban-h">Lorem ipsum</h1>
                 <p class="ban-cont mx-auto  text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
             </div>
-            <div class="gap-3 d-flex pt-5 text-center">
-                <table border="1px solid " class="w-50">
+            <div class="gap-3 d-flex pt-5 text-center tables">
+                <table border="1px solid " >
                     <tbody><tr>
                         <th class="p-con">Rank</th>
                         <th class="p-con">Name</th>
@@ -68,7 +69,7 @@
                         <td>Student</td>
                     </tr>
                 </tbody></table>
-                <table border="1px solid" class="w-50">
+                <table border="1px solid" >
                     <tbody><tr>
                         <th class="p-con">Rank</th>
                         <th class="p-con">Name</th>
@@ -101,7 +102,7 @@
     <section class="pt-5">
         <div class="container ">
             <h2 class="card-h">Lorem ipsum</h2>
-            <div class="d-flex gap-3">
+            <div class="d-flex para-g gap-3">
                 <p class="p-con text-center p2 fw-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <p class="p-con p2 text-center fw-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
@@ -126,8 +127,8 @@
         <div class="container">
             <h2 class="card-h">Lorem ipsum</h2>
             <div class="audios text-center pt-3">
-                <audio controls="" autoplay="">
-                    <source src="./assets/audio/audio.mp3" type="audio/mpeg">
+                <audio controls="" autoplay="" >
+                    <source src="./assets/audio/audio.mp3" type="audio/mpeg" >
                 </audio>
             </div>
         </div>
@@ -137,7 +138,7 @@
             <h2 class="card-h">Lorem ipsum</h2>
             <div class="form-f mx-auto pt-3">
                 <form action="#" class="mx-auto">
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 form-input">
                         <div>
                             <label for="fname" style="font-size: 18px; font-family:'Arial'; font-weight: 700;">First Name:</label><br>
                             <input type="text" id="fname" class="input" placeholder="first Name" required=""> 
@@ -148,10 +149,13 @@
                         </div>
                     </div>
                     <!--  -->
-                    <label for="email" style="font-size: 18px; font-family:Arial;font-weight: 700;">Email:</label><br>
-                    <input type="email" class="input2" id="email" placeholder="@gmail.com" required=""><br>
+                    <div class="form-input">
+                        <label for="email" style="font-size: 18px; font-family:Arial;font-weight: 700;">Email:</label>
+                        <input type="email" class="input2" id="email" placeholder="@gmail.com" required="">
+                    </div>
+                    
                     <!--  -->
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 form-input">
                         <div>
                             <label for="m-phone" style="font-size: 18px; font-family:Arial;font-weight: 700;">Mobile Number:</label><br>
                             <input type="number" class="input" placeholder="Mobile-Number" onkeypress="if(this.value.length==12) return false;"></div>
@@ -161,7 +165,7 @@
                         </div>
                     </div>
                     <!--  -->
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 form-input">
                         <div>
                             <label for="date" style="font-size: 18px; font-family:Arial;font-weight: 700;">Date:</label><br>
                             <input type="date" class="input" name="date" max="2001-01-02">
@@ -172,7 +176,7 @@
                         </div>
                     </div>
                     <!--  -->
-                    <div class="d-flex gap-5">
+                    <div class="d-flex gap-3 form-input">
                         <div>
                             <label for="country" style="font-size: 18px; font-family:Arial;font-weight: 700;">Select City:</label><br>
                             <select id="country" name="Country" class="input3">
@@ -190,11 +194,13 @@
                             </select>
                         </div>
                     </div><br>
-
-                    <label for="folder" class="rl" style="font-size: 18px; font-family:Arial;font-weight: 700;">Folder:</label>
-                    <input type="file" name="file" class="input4">
+                    <div class="file-f">
+                        <label for="folder" class="rl" style="font-size: 18px; font-family:Arial;font-weight: 700;">Folder:</label>
+                        <input type="file" name="file" class="input4">
+                    </div>
+                    
                     <!--  -->
-                    <div class="d-flex r-c gap-5">
+                    <div class="d-flex r-c gap-5 form-input">
                         <label for="color" class="rl" style="font-size: 18px; font-family:Arial;font-weight: 700;">color:
                         <input type="color" class="input5" name="Color"></label>                            
     
@@ -203,31 +209,31 @@
                     </div>
                     <!--  -->
                     <div class="sub-r  d-flex justify-content-center gap-3 ">
-                        <input type="submit" value="Submit" class=" px-5 pt-1 pb-1 subbtn">
-                        <input type="reset" value="Reset" class="rebtn px-5 pt-1 pb-1">
+                        <input type="submit" value="Submit" class=" px-5 pt-1 pb-1 subbtn" title="Submit">
+                        <input type="reset" value="Reset" class="rebtn px-5 pt-1 pb-1" title="Reset">
                     </div>
 
                 </form>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="f-bg pt-3 pb-5">
         <div class="container">
-            <div class="d-flex gap-3">
-                <div class="w-50">
+            <div class="d-flex gap-3 foter">
+                <div class="col-if">
                     <div class="iframes">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" class="object-fit-cover h-1 w-100" frameborder="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" class="object-fit-cover" frameborder="0"></iframe>
                     </div>
                 </div>
-                <div class="w-50">
-                        <div class="foter">
+                <div class="col-con">
+                        <div>
                             <h2>Radixweb</h2>
                             <h6><address class="font-normal">Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.</address></h6>
                         </div>
-                        <div class="d-flex icon">
-                            <div class="icn"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                            <div class="icn"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                            <div class="icn"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="gap-3 d-flex icon">
+                            <div><a class="text-decoration-none icn" href="https://twitter.com" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                            <div><a class="text-decoration-none icn" href="https://linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                            <div><a class="text-decoration-none icn" href="https://facebook.com/" target="_blank" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
                         </div>            
                 </div>
             </div>
