@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>JavaScript Form Validation using a sample registration form</title>
-<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
-<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
-<link rel='stylesheet' href='./css/style.css' type='text/css'/>
-<script src="./js/script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body onload="getSize()" onresize="getSize()">
-
-    <h1>Write a JavaScript program to get the width and height of the window (any time the window is resized).</h1>
-    
-    <div id="wh"></div>
-<br><br><br>
-
-<h2> Write a JavaScript function to add rows to a table.</h2>
-    <div>
-        <table id="tbl" border="1px" style="text-align: center; margin:0 auto; border-collapse: collapse;">
-            <tr>
-                <th style="padding: 10px;">Name:</th>
-                <td style="padding: 10px;">gorav</td>
-                <td style="padding: 10px;">ved</td>
-            </tr>
-            <tr>
-                <th style="padding: 10px;">Number</th>
-                <td style="padding: 10px;">2212</td>
-                <td style="padding: 10px;">0826</td>
-            </tr>
-        </table>
-        <input type="button" onclick="insert_Row()" value="Insert row">  
-    </div>
-<br><br><br>
-    <h2>Write a JavaScript program to get the current date.</h2>
-
-    <div>
-        <p> Current Date is: <span class="output"></span></p>
-        <button onclick="getCurrentDate()">Get current Date</button>
-    </div>
-    <br><br><br>
-    <h2>Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.</h2>
-
-    <div>
-        
-    </div>
+<body>
+    <center>
+        <form>
+            <h4>Registration Form</h4>
+            <!-- Input from User -->
+            <input type="text" placeholder='Name' id="name"><br>
+            <input type="email" placeholder='Email' id="email" required><br>
+            <input id='btn' type="submit" placeholder='Register' onclick="register(event)">
+        </form>
+        <!-- Output Form Details -->
+        <p>Name: <span id="display_name"></span></p>
+        <p>Email: <span id="display_email"></span></p>
+    </center>
+    <script>
+    const register = function (event) {
+    // Receive user input
+    let r_name = document.querySelector("#name").value;
+    let r_email = document.querySelector("#email").value;
+    // Output on page
+    display_name.innerHTML = r_name;
+    display_email.innerHTML = r_email;
+    event.preventDefault();
+    };
+    </script>
 </body>
 </html>
