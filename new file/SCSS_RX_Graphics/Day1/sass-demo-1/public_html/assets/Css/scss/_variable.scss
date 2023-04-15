@@ -1,0 +1,29 @@
+
+
+
+  $border-width:1px;
+  $border-widths: (
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px
+  );
+  $border-style:solid;
+
+$d-flex: flex;
+$col-12:100%;
+$col-6:calc(100% / 2);
+$col-3:calc(100% / 3);
+$col-4:calc(100% / 4);
+$w-50:50%;
+$w-25:25%;
+$w-75:75%;
+
+.col-12{width: $col-12;}
+.col-6{width: $w-50;}
+.col-3{width: $w-75;}
+.col-4{width: $w-25;}
+.w-50{width: $w-50;}
+.w-75{width: $w-75;}
+.w-25{width: $w-25;}

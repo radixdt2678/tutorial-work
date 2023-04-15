@@ -1,0 +1,76 @@
+*{box-sizing: border-box;}
+body{margin: 0px;background-color: #F8F8F8;}
+.topnav {list-style: none;}
+/*  */
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+footer .row {
+    max-width: 1200px;
+}
+
+/* .container{position: relative; max-width: 1920px;  margin: 0 auto; padding-left: 16px; padding-right: 16px; left: 0; right: 0;} */
+.navbar>.container{justify-content: unset;}
+/*  */
+.input{width: 40%;}
+.search-in{ align-items: center;border: 1px solid #B6B6B6;border-radius: 18px; padding: 5px 45px 5px 20px;}
+.icon{color: #9B9B9B;margin-left: -30px;}
+/*  */
+
+.nav-link.active1{border-bottom: 1px solid #0D6EFD; color: #0D6EFD;}  
+.nav-link.active,.nav-link:hover {border-bottom: 1px solid #0D6EFD; color: #0D6EFD;}
+::placeholder{color: #6C757D; font-size: 18px; font-family:'Karla',sans-serif;}
+.font-family-C{font-family: 'Cormorant',sans-serif;}
+.font-family-k{font-family: 'Karla',sans-serif;}
+.fs-p{font-size: 18px;}
+.card-group {
+    max-width: 1200px;
+}
+.tab-content>.active {
+    display: block;
+}
+@font-face {
+font-family: 'Cormorant';
+src: url(../font/CormorantGaramond-Regular.woff);
+}
+@font-face {
+    font-family: 'Karla';
+    src: url(../font/Karla-Regular.woff);
+}
+.border-right{border-right:1px solid #0D6EFD;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{display: none;margin: 0;}
+input{appearance: none;}
+.in-bg{ background-color: #CFCFCF;}
+.b-colr{background-color: #F5F9FF;}
+.bg-white{background-color: #fff;}
+.btn-hover:hover{background-color: #0d6efd; color: #fff; border-color: #0d6efd;}
+/*.arrow{font-size: 10px; display: flex;flex-wrap: wrap;flex-direction: column;justify-content: end; }*/
+/* .arrow:hover {cursor: pointer;color: black;transform: translateX(0.5rem);} */
+
+.carousel .carousel-control-prev-icon {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+.carousel .carousel-control-next-icon {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+.txt-ul{text-decoration: none;}
+.arr{color: #0D6EFD; font-size: 20px; align-items: center;}
+.c-bor{border-color: #F5F9FF;}
+
+@media screen and (max-width:320px){
+    .fs-5{font-size: 14px;}
+    
+}
+.carousel-inner img {
+    object-fit: cover;
+}

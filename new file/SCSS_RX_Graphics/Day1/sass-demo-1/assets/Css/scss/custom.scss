@@ -1,0 +1,372 @@
+@import 'mixins' ;
+@import 'variable';
+@import 'font';
+@import 'color';
+@import 'container';
+
+
+@include font-face("Lato",".Lato-Regular","Lato");
+@include font-size();
+
+body{
+    margin: 0;
+    font-family:$font-family-arial;
+}
+
+
+
+/* Navigation */
+
+#check{display: none;}
+
+.fa-btn{
+    display: none;
+    @include md{
+        display: unset; 
+        font-size:$fs-20;
+        padding: 20px; 
+        z-index: 9999999;
+    }
+    @include xsm{
+        padding: 10px;;
+    }
+}
+.nav-bar{ 
+    display: flex;
+    align-items: center; 
+}
+
+.navigation {
+  background: $bg-primary;
+  @include md{
+    #check:checked ~ nav{transform: translateY(0);}
+    }
+}
+
+.container, .nav-container {
+  max-width: $container;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.logo {
+    height: 70px;
+    width: 138px;
+    padding: 10px ;
+    .ban-img1{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+nav {
+    padding: 0px 100px;
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px 50px;
+      align-items: center;
+      transform: translateY(50% , -50%);
+        .nav-link{text-decoration: none;
+                    color: $text-dark;
+                    &.active,:hover{
+                        color: red;border-bottom: 1px solid $scondary;
+                    }&:hover{
+                        color: $scondary;
+                        border-bottom:1px solid $scondary;
+                    }
+                    @include md { border-bottom :1px solid #faf5e4; font-size: $fs-20; color: #292929;}  
+            }
+            @include md {
+                display: flex; flex-direction: column; padding-top: 50px; color: #292929; z-index: 9; cursor: pointer; align-items: baseline;
+            }
+    } 
+    @include md {
+        position: absolute; width: 100%;top: 0;left: 0;height: 100vh;transform: translateY(-100%);text-align: center; transition: all .5s; padding: 0; z-index: 999;background-color: #d4d4d4;
+    }
+    @include lg { 
+        padding: 0px 30px;
+        .nav-list{
+            gap: 10px 30px;
+        }
+    }
+}
+.search-in{
+    margin-left: auto;
+    width: auto;
+    display: flex;
+    align-items: center; 
+    @include sm {
+        margin-left: 30px;
+    }
+    @include xsm {
+    margin-left: unset;
+    }
+}
+.search__input {
+    border: 1px solid $text-muted;
+    padding: 10px 271px 10px 25px;
+    position: relative;
+    border-radius: 25px;
+    margin-bottom: 0;
+    @include xl{
+        width: 250px;
+        padding: 10px 50px 10px 25px;
+    }
+    @include xlg{
+        padding: 10px 50px 10px 25px;
+        width: 250px;
+    }
+    @include lg{ 
+        padding: 10px 70px 10px 25px;
+        width: 200px;
+    }
+    @include sm {
+        width: 100px; 
+    }
+    @include xsm {
+        width: 0px;
+    }
+}
+.icn1{
+    position: absolute;
+    z-index: 99;
+    right: 45px;
+    color: $gray;
+    transform: translateY(-50% , 50%);
+    @include md{
+        right: 85px;
+    }
+    @include sm {
+        right: 190px;
+    }
+}
+
+/*---------------------------------------- banner-Section ------------------------------------------------------------------------*/
+
+.banner-section{background-color: $bg-secondary;}
+.banner-container{
+    display: $d-flex;
+    padding: 80px;
+    @include md{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+}
+.banner-content{
+    max-width: $section-container; 
+    width: $col-12;
+    font-size: $fs-20;
+    font-family: $font-family-arial;    
+    line-height: 40px;
+    font-weight: $fw-700;
+    color: $text-secondary;
+        .h-1{
+        color: red;
+        font-size: $fs-48;
+        @include xlg{
+            font-size: $fs-40;
+            }
+            @include lg{
+                font-size: $fs-32;
+            }
+            @include md{
+                font-size: $fs-30;
+            }
+            @include sm{
+                font-size: $fs-25;
+            }
+            @include xsm{
+                font-size: $fs-20;
+            }
+        }
+        @include xlg{
+        font-size: $fs-18;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    @include md{
+        width: 100%;
+    }
+    @include sm{
+        width: 100%;
+    } 
+    @include xsm {
+        width: 100%;
+        font-size: $fs-14;
+    }
+}
+.banner-img{width: 50%;
+    .ban-img1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @include xsm{
+        width: 100%;
+    }
+    @include md{
+        width: 100%;
+        
+    }
+    @include sm{
+        width: 100%;
+       
+    }
+}
+
+/* --------------------------------card-section ---------------------------------------------------------------------------------------------------*/
+
+.d-flex{display: $d-flex;}
+.crd-container{
+    max-width: $section-container;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.gap{gap: 28px;}
+.h2-l{font-family: $font-family-arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fs-48;
+    line-height: 40px;
+    text-align: center;
+    color: $scondary;
+    margin-bottom: 50px;
+    @include lg{
+        font-size: $fs-32;
+    }
+    @include md{
+        font-size: $fs-30;
+    }
+    @include sm{
+        font-size: $fs-25;
+    }
+}
+.h3-l{color: $scondary;
+    font-size: $fs-20;
+    margin-bottom: 15px; }
+.o1,.o2,.o3 {
+    font-family: $font-family-arial;
+    font-style: normal;
+    font-weight: $fw-700;
+    font-size: $fs-20;
+    line-height: 30px;
+    color: $text-secondary;
+    text-align: left;
+    @include md{
+        font-size: $fs-18;
+    }
+    @include sm{
+        font-size: $fs-14;
+    }
+}
+.crd{border: 1px solid $scondary;
+    box-shadow: 0px 4px 20px rgb(175 175 175 / 10%);
+    border-radius: 20px;
+    padding: 35px 10px;
+    background-color: $bg-primary;
+    &.crd-c1 {
+        border-color: $primary;
+    }
+    &.crd-c2 {
+        border-color: $text-warning;
+    }
+    @include xlg{
+        font-size: $fs-18;
+        line-height: 30px;}
+}
+.colum-slide{
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ---------------------Slide Section ---------------------------------------------------------------*/
+.colum-side{
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.colum-side2{
+    @include md{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.a1-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide-container{
+    max-width: $section-container;
+    margin: 0 auto;
+}
+.aside-img{
+    @include md{
+        width: 100%;
+    }
+}
+.aside2-content ,.aside-content{
+    background-color: $bg-secondary;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    @include md{
+        width: 100%;
+    }
+}
+.btn{
+    font-size: $fs-18;
+    color: $text-light; 
+    background-color: $text-dark;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    background-color: transparent;
+    color:$text-dark;
+}
+.crd-h{
+    font-size: $fs-32; 
+    font-family: $font-family-arial;
+    color: $primary;
+    @include md{
+        font-size: $fs-25;
+    }
+}
+.par-asid{font-size: $fs-18;
+     font-family: $font-family-arial;
+     @include xsm {
+        font-size: $fs-14;
+     }
+}
+    
+/* -------------------------------footer------------------------------------------------------------------------------------- */
+footer{
+    background-color: $bg-secondary;
+    padding: 30px;
+}
+.foter-h{
+    font-size: $fs-20;
+    font-family: $font-family-arial;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.foter-p{
+    font-size: $fs-18;
+    font-family: $font-family-arial;
+    text-align: center;
+    padding: 0;margin: 10px;
+    color: $text-dark-s;
+    @include sm{
+        font-size: $fs-14;
+    }
+}

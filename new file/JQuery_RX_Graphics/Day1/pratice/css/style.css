@@ -1,0 +1,12 @@
+#box{
+    width: 50%;
+    height: 200px;
+    /* background-color: aqua; */
+    color: black;
+    padding: 10px;
+    border: 1px solid red;
+    overflow: auto;
+}
+.red{color: red;}    
+.first{background: tan;}
+.last{background-color:chocolate ;}

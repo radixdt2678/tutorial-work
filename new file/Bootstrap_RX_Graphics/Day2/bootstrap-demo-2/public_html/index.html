@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo 2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 gap-5 px-5">
+                  <li class="nav-item"><a class="nav-link active1" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                  <li class="nav-item "><a class="nav-link" href="#" aria-expanded="false">Service</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Help</a></li>
+                </ul>
+                <div class="input d-flex align-items-center ">
+                  <input class="w-100 form-control search-in shadow-none" type="text" placeholder="Search your items here">
+                  <i class="fa fa-search icon" aria-hidden="true"></i>
+                  <button type="button" class="btn btn-1 btn-bg mx-4 col-lg-3  border-0  rounded-0 text-white fw-bold f-20">Book Now</button> 
+                </div> 
+              
+                          
+                <!-- <button class="btn btn-outline-success mx-4" type="submit">Search</button> -->           
+            </div>
+          </div>
+        </nav>        
+      </header>
+      <section class="banner-section">
+        <h1 class="fs-56 col-12 font-family-jose text-white text-center position-absolute h1 fw-bold">Lorem ipsum dolor sit amet</h1>
+        
+    </section>
+    <section>
+        <div class="position-absolute ban-main w-100 row">
+            <div class="col-9 bg-clr px-5 py-3 mx-auto border border-2 ">
+               <div class="row justify-content-evenly">
+                <div class="arrival-date col-lg-3 px-0 border-b">
+                    <p class="font-inter f-16  text-gray mb-1">Arrival-Departure Date</p>
+                    <div class="dropdown-center shadow px-2">
+                        <select class="form-select text-gray fs-6 font-inter border-0 bg-transparent ps-0 shadow-none" aria-label="Default select example">
+                            <option selected="">Saturday, 15 April</option>
+                            <option value="1">Sunday, 16 April</option>
+                            <option value="2">Monday, 17 April</option>
+                            <option value="3">Tuesday, 18 April</option>
+                          </select>
+                      </div>
+                </div>
+                <div class="adults col-lg-2 px-0 border-b">
+                    <p class="font-inter f-16 text-gray mb-1">Adults</p>
+                    <div class="dropdown-center shadow px-2">
+                        <select class="form-select text-gray fs-6 font-inter border-0 bg-transparent ps-0 shadow-none" aria-label="Default select example">
+                            <option selected="">1</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                      </div>
+                </div>
+                <div class="children col-lg-2 border-b">
+                    <p class="font-inter f-16 text-gray mb-1">Children</p>
+                    <div class="dropdown-center shadow px-2">
+                        <select class="form-select text-gray fs-6 font-inter border-0 bg-transparent ps-0 shadow-none" aria-label="Default select example">
+                            <option selected="">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                      </div>
+                </div>
+                <div class="col-lg-3 pt-3 col-12 text-center">
+                    <button type="button" class="btn btn-1  btn-bg py-2  f-21 rounded-0 text-white fw-bold">Check Availability</button>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="nx-sec">
+        <div class="container-fluid mt-lg-5 pt-lg-5">
+          <div class="p-4 font-clr text-center font-family-jose col-md-5 col-12 mx-auto">
+            <h1 class="fw-bold f-48">Welcome to Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          </div>
+          <div class="f-16 font-family-inter col-md-5 mx-auto">
+            <p class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+          </div>
+        </div>
+    </section>
+    <section class="bg-img mt-lg-5">
+        <div class="container-fluid crd-aside">
+            <div class="row align-items-center slide-1">
+                <div class="cont-img col-lg-6 col-12">
+                    <img src="./assets/images/aide-1.png" alt="" class="col-12 object-fit-cover" height="529" width="978">
+                </div>
+                <div class="content p-lg-5 py-5 col-lg-6 col-12 txt-a">
+                    <h1 class="fw-bold font-family-jose font-clr col-lg-5 col-12 f-48">Lorem ipsum dolor sit amet</h1>
+                        <p class="text-left text-secondary font-family-inter col-lg-7 col-12 f-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                             dolore eu fugiat nulla pariatur.
+                        </p>
+                </div>
+            </div>                        
+        </div>
+    </section>
+    <section class="bg-img2">
+        <div class="container-fluid crd-aside">
+            <div class="row align-items-center flex-column-reverse flex-lg-row slide-1">
+                <div class="p-lg-5 py-3 d-flex  flex-column align-items-end content col-lg-6 col-12 txt-a">
+                    <h1 class="fw-bold font-family-jose font-clr col-lg-7 col-12 pb-2 f-48">Lorem ipsum dolor sit <br> amet</h1>
+                        <p class="text-right text-secondary font-family-inter col-lg-7 col-12 f-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                             dolore eu fugiat nulla pariatur.
+                        </p>
+                </div>
+                <div class="cont-img col-lg-6 col-12">
+                    <img src="./assets/images/aside--22.png" alt="" class="col-12 object-fit-cover" height="529" width="978">
+                </div>
+            </div>                        
+        </div>
+    </section>
+    <section class="mt-lg-5 pt-lg-5">
+        <div class="container-fluid">
+            <div class="p-4 font-clr  text-center font-family-jose col-lg-5 mx-auto">
+                <h2 class=" f-48 fw-semibold">Lorem ipsum dolor sit amet</h2>
+            </div>
+            <div class="font-family-inter col-lg-4 text-center mx-auto">
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="d-flex gap-5  text-center mx-auto pt-5 mb-5 crd flex-column flex-lg-row">
+                <div class=" border p-5">
+                    <img src="./assets/images/c1.png" alt="" class="img-fluid">
+                    <p class="font-family-inter pt-3">Lorem ipsum dolor sit</p>
+                </div>
+                <div class=" border p-5">
+                    <img src="./assets/images/c2.png" alt="">
+                    <p class="font-family-inter pt-3">Lorem ipsum dolor sit</p>
+                </div>
+                <div class=" border p-5">
+                    <img src="./assets/images/c3.png" alt="">
+                    <p class="font-family-inter pt-3">Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+            <div class=" text-center">
+                <button type="button" class="btn btn-1  btn-bg py-2 border-0 fs-5 rounded-0 f-20 text-white fw-semibold">View More</button>
+            </div>
+        </div>
+    </section>
+    <section class="mt-lg-5 pt-lg-5 pb-2">
+        <div class="container-fluid">
+            <div class="p-4 font-clr  text-center font-family-jose col-lg-5 mx-auto">
+                <h2 class=" f-48  fw-semibold">Lorem ipsum dolor</h2>
+            </div>
+            <p class="font-family-inter text-center col-lg-4 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="pt-3 sl-ab p-lg-5 d-flex flex-column flex-sm-row ">
+                <div class="position-absolute  p-lg-5 p-2 bg-clr2 w-36  ab-2 ">
+                    <div class="d-flex justify-content-between align-items-baseline">
+                        <div class="d-flex gap-md-4  align-items-baseline flex-column flex-md-row">
+                            <h3 class="font-family-jose fw-semibold font-clr f-16">Lorem ipsum</h3>
+                            <p class="font-family-inter f-20">47 m² dolor 1 - 2 eiusmod tempor</p>
+                        </div>
+                        
+                        <button type="button" class="btn btn-2 py-2  rounded-0 text-white fw-bold f-20">Book Now</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-baseline ">
+                        <div class="d-flex gap-md-4 justify-content-between align-items-baseline flex-column flex-md-row">
+                            <h3 class="font-family-jose fw-semibold font-clr f-16">Lorem ipsum</h3>
+                            <p class="font-family-inter f-20">47 m² dolor 1 - 2 eiusmod tempor</p>
+                        </div>                        
+                        <button type="button" class="btn btn-2 py-2   rounded-0 text-white fw-bold f-20">Book Now</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-baseline ">
+                        <div class="d-flex gap-md-4 justify-content-between align-items-baseline flex-column flex-md-row">
+                            <h3 class="font-family-jose fw-semibold font-clr f-16">Lorem ipsum</h3>
+                            <p class="font-family-inter f-20">47 m² dolor 1 - 2 eiusmod tempor</p>
+                        </div>                        
+                        <button type="button" class="btn btn-2 py-2   rounded-0 text-white fw-bold f-20">Book Now</button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-baseline">
+                        <div class="d-flex gap-md-4 justify-content-between align-items-baseline flex-column flex-md-row">
+                            <h3 class="font-family-jose fw-semibold font-clr f-16">Lorem ipsum</h3>
+                            <p class="font-family-inter f-20">47 m² dolor 1 - 2 eiusmod tempor</p>
+                        </div>                        
+                        <button type="button" class="btn btn-2 py-2  rounded-0 text-white fw-bold f-20">Book Now</button>
+                    </div>
+                </div>
+                <div class="position-relative slide slider mx-auto col-lg-9 col-12 text-center sli-slider">
+                    <img src="./assets/images/sli-1.png" alt="slide-img" height="624" width="1276" class="img-fluid object-fit-cover">
+                    <img src="./assets/images/sli-1.png" alt="slide-img" height="624" width="1276" class="img-fluid object-fit-cover">
+                    <img src="./assets/images/sli-1.png" alt="slide-img" height="624" width="1276" class="img-fluid object-fit-cover">
+                    <img src="./assets/images/sli-1.png" alt="slide-img" height="624" width="1276" class="img-fluid object-fit-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vid-sec">
+        <div class="container-fluid">
+            <div class="pt-5 text-center">
+                <video width="320" height="240" controls autoplay class="col-lg-6 col-12 h-lg-50 h-100">
+                    <source src="./assets/video/video.mp4" type="video/mp4" class=" object-fit-cover" >                              
+                </video> 
+            </div>            
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="p-4 font-clr pt-lg-5 mt-lg-5 text-center font-family-jose col-lg-5 mx-auto">
+                <h2 class=" fs-48 col-12 fw-semibold">Lorem ipsum</h2>
+            </div>
+            <div>
+                <div class="d-flex justify-content-center">
+                    <div class="grid">
+
+                        <div class="item"><img src="./assets/images/img-3.png" alt="..."  class="image" height="262" width="435"/></div>
+                        
+                        <div class="item" ><img src="./assets/images/img-2.png" alt="..." class="image" height="623" width="435"/></div>
+                        
+                        <div class="item" ><img src="./assets/images/img-1.png" alt="..." class="image" height="262" width="435"/></div>
+                        
+                        <div class="item" ><img src="./assets/images/img-5.png" alt="..." class="image" height="262" width="435"/></div>
+                        
+                        <div class="item" ><img src="./assets/images/img-4.png" alt="..." class="image" height="623" width="435"/></div>
+
+                        <div class="item" ><img src="./assets/images/img-6.png" alt="..." class="image" height="623" width="435"/></div>
+                    
+                    </div>
+                </div>                           
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="p-4 font-clr pt-lg-5 mt-lg-5 text-center font-family-jose col-lg-5 mx-auto">
+            <h2 class=" f-48 fw-semibold">Lorem ipsum form</h2>
+        </div>  
+    </section>
+    
+    <section class="position-relative back-img pt-lg-5 mt-lg-5">            
+        <div class="container-fluid p-5">
+            <div class="bg-form">
+                <form class="needs-validation pt-5" >
+                    <div class="row g-4">
+                      <div class="col-sm-6 col-12">
+                        <label for="Name" class="form-label col-12 font-inter fo-16 text-white">Your name:</label>
+                        <input type="text" class="form-control bg-body-secondary rounded-0 shadow-none" id="Name" placeholder="Name" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="p-number" class="form-label font-inter fo-16 text-white">Number of Person:</label>
+                        <input type="number" class="form-control bg-body-secondary rounded-0 shadow-none" id="p-number" placeholder="person Number" required>
+                        <div class="invalid-feedback">
+                          Valid mobile number is required.
+                        </div>
+                      </div>
+      
+                      <div class="col-6 col-sm-6">                        
+                        <label for="email" class="form-label  font-inter fo-16 text-white">Your Email:</label>
+                        <input type="email" class="form-control bg-body-secondary rounded-0 shadow-none" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Please enter a valid email address for shipping updates.
+                        </div>
+                      </div>
+      
+                      <div class="col-sm-6 col-6 ">
+                            <label for="d-number" class="form-label font-inter fo-16 text-white">Number of Day:</label>
+                            <input type="number" class="form-control bg-body-secondary rounded-0 shadow-none" id="d-number" placeholder="Number of the day" required>
+                            <div class="invalid-feedback">
+                            Valid mobile number is required.
+                            </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="col-6 pd">
+                            <div class="col-sm-12">
+                                <label for="equiery" class="form-label  font-inter fo-16 text-white">Your Enquiry Type:</label>
+                                <select class="form-select bg-body-secondary  rounded-0 shadow-none" id="equiery" required>
+                                <option value="">Select Your type</option>
+                                <option>feedbackk</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                Please select a valid country.
+                                </div>
+                            </div>
+            
+                            <div class="col-12">
+                                <label for="date" class="form-label font-inter fo-16 text-white">Date of Arrive:</label>
+                                <input type="date" class="form-control bg-body-secondary  shadow-none rounded-0" id="lastName"  value required>
+                                <div class="invalid-feedback">
+                                Valid date is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="px-3">
+                                <label for="date" class="form-label font-inter fo-16 text-white">Customer Enquiry:</label>
+                                <textarea class="form-control shadow-none bg-body-secondary rounded-0" rows=4 placeholder="Leave a comment here" id="floatingTextarea2Disabled"  disabled></textarea>
+                                
+                              </div>
+                        </div>
+                      </div>
+                      <div class="col-12 text-center pt-3">
+                        <button type="submit" class="btn btn-s col-lg-2 font-inter rounded-0  border-0">Submit</button>
+                      </div>
+                  </form>
+            </div>
+        </div>
+        
+    </section>
+    <section class="pt-lg-5">
+        <div class="container-fluid">
+            <div class="p-4 font-clr pt-lg-5 mt-lg-5 text-center font-family-jose col-lg-5 mx-auto d-flex flex-column flex-md-row">
+                <h2 class=" f-48 mx-auto fw-semibold">Lorem ipsum doller</h2>
+            </div>
+        </div>
+    </section>
+    <section class="bg-cont container-fluid pt-xxl-5">
+        <div class=" d-flex mb-5 align-items-center w-70  mx-auto flex-column flex-lg-row ">
+            <div class="position-absolute col-4 img-sec slider-nav ">
+                    <img src="./assets/images/asi-1.png" alt="hotel-img" class="img-fluid">
+                    <img src="./assets/images/bg1.jpg"  alt="hotel-img" class="img-fluid">  
+                    <img src="./assets/images/asi-1.png" alt="hotel-img" class="img-fluid">
+                    <img src="./assets/images/bg1.jpg" alt="hotel-img" class="img-fluid">
+            </div>
+            <div class="col-lg-6 cont">
+                <div class="col-12 slider-for w-500 ">
+                    <div class="col-lg-6">
+                        <h3 class="f-32 font-family-jose fw-semibold ">Lorem ipsum</h3>                  
+                        <div class="f-20">
+                            <p class="d-flex gap-2 f-20"><span><img src="./assets/images/Vector.png" alt="" class="img-fluid object-fit-cover"></span> 30.08. - 09.10.2022</p>
+                            <p class="f-20">47 m² dolor 1 - 2 eiusmod tempor</p>
+                            <p class="f-20">Lorem ipsum 56 € per Person (bis max. 103 € per Person)</p>
+                            <p class="f-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+                        </div>
+                        <div class="d-sm-block d-flex flex-column justify-content-center gap-2">
+                            <button type="button" class="btn btn-1 btn-bg py-1 mx-4  f-20 rounded-0 text-white fw-bold">Request</button>
+                            <button type="button" class="btn  btn-2 py-1 px-1  f-18 rounded-0 text-white fw-bold">Book Now</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>helo!</p>
+                    </div>
+                    <div>
+                        <p>How are You ?</p>
+                    </div>
+                    <div>
+                        <p>All Good!</p>
+                    </div>
+                                      
+                </div> 
+               <!--  <button class="slick-prev slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: inline-block;">Previous</button> -->
+                     
+            </div>
+            
+                
+           
+        </div>
+        <div class="position-absolute arrows">           
+            <img src="./assets/images/arow-2.png" alt="">
+            <img src="./assets/images/arow-1.png" alt="">
+            <!-- <i class="fa fa-arrow-left fs-4" aria-hidden="true"></i>  
+            <i class="fa fa-arrow-right fs-4" aria-hidden="true"></i> -->
+        </div>
+         
+         
+        
+    </section>
+    
+           
+    <footer class="pt-2 bg-clr3 footer-top">
+       
+            <div class="container-fluid">
+                    <div class="row mt-lg-5 py-lg-5 my-5 mx-auto col-lg-9 font-family-inter ">
+                      <div class="col-lg-6 col-sm-6 mb-3 col-12 fs-16">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul class="nav d-flex align-items-center">
+                                        <li class="w-30"><img src="./assets/images/telv.png" alt="" class="img-fluid d-block"></li>
+                                        <li class="text-white">+39  0472 647 122</li>
+                                    </ul>
+                                    <ul class="nav d-flex align-items-center pt-2">
+                                        <li class="w-30"><img src="./assets/images/nummv.png" alt="" class="img-fluid d-block"></li>
+                                        <li class="text-white">+39 0472 647 350</li>
+                                    </ul>
+                                    <ul class="nav d-flex align-items-center pt-2">
+                                        <li class="w-30"><img src="./assets/images/mailv.png" alt="" class="img-fluid d-block"></li>
+                                        <li class="text-white">info@loremipsum.com</li>
+                                    </ul>                           
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex align-items-baseline gap-2">
+                                    <img src="./assets/images/locv.png" alt="" class="w-30 img-fluid d-block">
+                                    <p class="col-12 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 776688-mumbai.</p>                                    
+                                </div>
+                            </div>
+                                
+                        
+                            <form class="pt-5 mb-4">          
+                                <p class="fs-p text-white font-family-K">NEWSLETTER <br>
+                                Sign up for special offers</p>
+                                <div class="d-flex w-100  pt-1">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control rounded-0 bg-trans" >
+                                    <button class="btn btn-4 rounded-0 border bg-body" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                            <div class="d-flex text-white gap-4">
+                                <p class="">Follow us on</p>
+                                <a href="#" class="text-decoration-none text-white"><i class="fa fa-instagram fs-4" aria-hidden="true"></i></a>
+                                <a href="#" class="text-decoration-none text-white"><i class="fa fa-facebook-official fs-4" aria-hidden="true"></i></a>
+
+                            </div>
+                      </div>                     
+                      <div class="col-6 col-sm-3 w-36  mb-3 fot-2 font-family-inter  fs-18">
+                        <p class="text-white">Interessante Seiten</p>
+                        <p class="text-white">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical, May one Which life divide sea.</p>
+                        <p class="text-white pt-4">Weather in mumbai</p>
+                        <div class="d-flex justify-content-lg-between justify-content-sm-evenly align-items-center text-white  flex-sm-row m-whea">
+                            <div class="border-md-end Weather wh">
+                                <!-- <i class="fa-thin fa-cloud-bolt-sun"></i> -->
+                                <img src="./assets/images/whev.png" alt="" class="pb-2 px-3">
+                                <p>22.09.2022</p>
+                                <p>Min: 13°</p>
+                                <p>Max: 22°</p>
+                            </div>
+                            <div class="border-md-end Weather wh">
+                                <img src="./assets/images/whev.png" alt="" class="pb-2 px-3">
+                                <p>22.09.2022</p>
+                                <p>Min: 13°</p>
+                                <p>Max: 22°</p>
+                            </div>
+                            <div class="wh">
+                                <img src="./assets/images/whev.png" alt="" class="pb-2 px-3">
+                                <p>22.09.2022</p>
+                                <p>Min: 13°</p>
+                                <p>Max: 22°</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+              </div>
+              <div class="py-2 bg-clr2 border-top text-center font-family-inter">
+                <p class="f-20"><a href="#" class="text-decoration-none text-dark">© 2023 Quiety Rights Reserved. Designed By LoremIpsum</a> </p>
+              </div>
+    </footer>
+        
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

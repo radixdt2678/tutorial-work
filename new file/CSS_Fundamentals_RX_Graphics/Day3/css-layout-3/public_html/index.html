@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSS-layout-1</title>
+      <!-- Font-awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
+   </head>
+   <body class="bg-gray pt-60">
+      <header>
+         <div class="container">
+            <nav class="d-flex align-item-center">
+               <div class="logo col-2">
+                  <a href="#"><img src="./assets/images/logo.png" alt="image" class="logo-img" height="54"
+                     width="202"/></a>
+               </div>
+               <div class="nav-bar col-6">
+                  <ul class="d-flex ml-0 gap-50 list-style-none pl-0">
+                     <li>
+                        <a
+                           href="#"
+                           title="Home"
+                           class="text-primary border-bottom-primary ">Home</a>
+                     </li>
+                     <li>
+                        <a href="#" title="Html" class="nav-link text-gray">Html</a>
+                     </li>
+                     <li>
+                        <a href="#" title="Css" class="nav-link text-gray">Css</a>
+                     </li>
+                     <li>
+                        <a href="#" title="Layout" class="nav-link text-gray">Layout</a>
+                     </li>
+                     <li>
+                        <a href="#" title="Bootstrap" class="nav-link text-gray">Bootstrap</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4">
+                  <div class="position-relative search-bar text-right">
+                     <input type="text" class="search-input text-gray" placeholder="Enter keyword, Item # or Part #"/>
+                     <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                  </div>
+               </div>
+               <div class="fa-btn"><label class="checkbtn"><i class="fa fa-bars"></i></label></div>
+            </nav>
+         </div>
+      </header>   
+      <section class="banner-section pt-5 pb-5 pb-lg-3 pb-sm-1 mt-5 bg-primary">
+         <div class="container">
+            <div class="text-left d-flex align-item-center col-11 p-50 mx-auto flex-col-reverse">
+               <div class="d-flex flex-col gap-30 col-8 px-5">
+                  <h1 class="text-primary font-48 mb-0 mt-0">Lorem ipsum</h1>
+                  <p class="mx-auto line-height-40">
+                     "<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</b> sed
+                     do eiusmod <small>tempor incididunt</small> ut labore
+                     <sup>et dolore</sup> magna aliqua.<em
+                        >Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                     laboris nisi ut aliquip ex ea commodo</em>
+                     consequat. Duis aute irure dolor in <del>reprehenderit </del>
+                     <u>in voluptate velit</u> esse cillum dolore eu fugiat nulla
+                     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                     culpa qui officia deserunt mollit anim id
+                     <mark style="background-color: red">est laborum.</mark> "
+                  </p>
+               </div>
+               <div class="text-right ml-auto col-4">
+                  <img src="./assets/images/sec-1.png" alt="banner-img" height="280" width="480" class="col-12 h-100">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="list-section pt-5 pb-5 pb-lg-3 pb-sm-1 pt-sm-1">
+         <div class="container">
+            <h2 class="font-40 text-primary text-center">Lorem ipsum</h2>
+            <div class="d-flex flex-wrap pt-3 pt-lg-3 pt-sm-1 gap-30">
+               <div class="col-4 bg-white border-radius border-primary px-4">
+                  <ul>
+                     <li class="text-primary">
+                       <span class="font-20">Lorem ipsum</span>
+                        <ol type="1" class="py-3 d-flex flex-col gap-15">
+                           <li class=" text-gray">
+                              <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                              nibh euismod tincidun</b>
+                           </li>
+                           <li class=" text-gray">
+                              <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+                              euismod tincidun</b>
+                           </li>
+                        </ol>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4 bg-white border-radius border-secondary px-4">
+                  <ul>
+                     <li class="text-primary">
+                        <span class="font-20">Lorem ipsum</span>
+                        <ol type="A" class="py-3 d-flex flex-col gap-15">
+                           <li class="text-gray">
+                              <em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidun</em>
+                           </li>
+                           <li class=" text-gray">
+                              <i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidun</i>
+                           </li>
+                        </ol>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-4 bg-white border-radius border-yellow px-4">
+                  <ul>
+                     <li class="text-primary">
+                        <span class="font-20">Lorem ipsum</span>
+                        <ol type="I" class="py-3 d-flex flex-col gap-15">
+                           <li class="text-secondary">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidun
+                           </li>
+                           <li class="text-secondary">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidun
+                           </li>
+                        </ol>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="divide-section pt-3 pt-lg-3 pt-sm-1">
+         <div class="container">
+            <h2 class="text-primary font-40 text-center pb-3 pb-lg-3 pb-sm-1">Lorem ipsum</h2>
+            <div class="d-flex flex-lg-col col-9 mx-auto bg-primary">
+               <div class="col-6">
+                  <img
+                     src="./assets/images/sec-2.png" alt="room-img" class="col-12 h-100 object-fit-cover"
+                     height="571" width="300"/>
+               </div>
+               <div class="col-6 py-4">
+                  <div class=" pb-3 py-4 px-5">
+                     <h2 class="font-32 text-secondary mt-0">Lorem ipsum</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                        diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+                        aliquam erat volutpat.
+                     </p>
+                     <p>
+                        sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+                        aliquam erat volutpat.
+                     </p>
+                     <button class="bg-black text-white px-4 py-2 font-18 mt-2">
+                     View More
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="divide-section pb-5 pb-lg-3 pb-sm-1 pt-lg-4">
+         <div class="container">
+            <div class="d-flex flex-col-reverse col-9 mx-auto bg-primary">
+               <div class="col-6 ">
+                  <div class="py-4 px-5">
+                     <h2 class="font-32 text-secondary  mt-0">Lorem ipsum</h2>
+                     <p class="line-height-30 font-18">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                        diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+                        aliquam erat volutpat.
+                     </p>
+                     <p class="line-height-30 font-18">
+                        sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+                        aliquam erat volutpat.
+                     </p>
+                     <button class="bg-black text-white px-4 py-2 font-18 ">
+                     View More
+                     </button>
+                     <!-- <a href="#" title="View More" class="text-primary border-bottom-primary ">
+                        View More</a> -->
+                  </div>
+               </div>
+               <div class="col-6">
+                  <img
+                     src="./assets/images/sec-3.png"
+                     alt="nature-img"
+                     class="col-12 h-100 object-fit-cover"
+                     height="571"
+                     width="300"/>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="mt-5 bg-primary">
+         <div class="container">
+            <div class="pt-1 pb-4 text-center ">
+               <h6 class="mb-2 font-20">Radixweb</h6>
+               <address class="mt-2 font-18">
+                  Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.
+               </address>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

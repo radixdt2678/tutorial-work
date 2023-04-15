@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HTML-LAYOUT-2</title>
+      <!-- Font-Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+      <!-- Main CSS -->
+      <link rel="stylesheet" href="./assets/css/style.css">
+   </head>
+   <body>
+      <header>
+         <nav class="d-flex align-item-center">
+            <div class="logo col-2">
+               <a href="#"><img src="./assets/image/logo.png"
+                  alt="image"
+                  class="logo-img"
+                  height="54"
+                  width="202"
+                  /></a>
+            </div>
+            <div class="nav-bar col-6">
+               <ul class="d-flex ml-0 gap-50 list-style-none pl-0">
+                  <li>
+                     <a
+                        href="#"
+                        title="Home"
+                        class="text-primary border-bottom-primary "
+                        >Home</a>
+                  </li>
+                  <li>
+                     <a href="#" title="Html" class="nav-link text-gray">Html</a>
+                  </li>
+                  <li>
+                     <a href="#" title="Css" class="nav-link text-gray">Css</a>
+                  </li>
+                  <li>
+                     <a href="#" title="Layout" class="nav-link text-gray">Layout</a>
+                  </li>
+                  <li>
+                     <a href="#" title="Bootstrap" class="nav-link text-gray"
+                        >Bootstrap</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-4">
+               <div class="position-relative search-bar text-right">
+                  <input type="text" class="search-input text-black" placeholder="Enter keyword, Item # or Part #"/>
+                  <i class="fa fa-search search-icon" aria-hidden="true"></i>
+               </div>
+            </div>
+            <div class="fa-btn ml-auto"><label class="checkbtn"><i class="fa fa-bars"></i></label></div>
+         </nav>
+      </header>
+      <section class=" banner-section pt-5 pb-5 pb-lg-3 pb-sm-1 mt-5 ">
+         <div class="container">
+            <h1 class="text-center font-40 text-gray">Lorem ipsum</h1>
+            <p class="font-20 text-center text-gray col-4 mx-auto font-weight-bold ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+               sed diam nonummy nibh euismod 
+            </p>
+            <table class="mt-5 mx-auto col-12">
+               <thead class="bg-mighty-gray text-left font-22">
+                  <tr>
+                     <th class="px-3 py-2">Company</th>
+                     <th>Contact</th>
+                     <th class="px-1">Country</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr class="border-bottom-gray ">
+                     <td class="px-3 py-2">Lorem ipsum</td>
+                     <td>Maria Anders</td>
+                     <td>Sweden</td>
+                  </tr>
+                  <tr class="border-bottom-gray">
+                     <td class="px-3 py-2">Lorem ipsum doller</td>
+                     <td>Christina Berglund</td>
+                     <td>Germany</td>
+                  </tr>
+                  <tr class="border-bottom-gray">
+                     <td class="px-3 py-2">Lorem ipsum quie</td>
+                     <td>Francisco Chang</td>
+                     <td>Maxico</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </section>
+      <section class="pt-5">
+         <div class="container">
+            <h2 class="font-40 text-center">Lorem ipsum</h2>
+            <p class="mx-auto col-6 text-center font-20">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+         </div>
+      </section>
+      <section class="video-section pt-5">
+         <div class="container">
+            <h2 class="font-40 text-center">Lorem ipsum</h2>
+            <div class="text-center pt-3 video-content">
+               <video width="1046" height="424" controls autoplay class="object-fit-cover col-12 h-100">
+                  <source src="./assets/video/video.mp4" type="video/mp4" >
+               </video>
+            </div>
+         </div>
+      </section>
+      
+      <section class="audio-section pt-5">
+         <div class="container">
+            <h2 class="font-40 text-center">Lorem ipsum</h2>
+            <div class="text-center audio">
+               <audio controls autoplay>
+                  <source src="./assets/audio/audio.mp3" type="audio/mpeg" class="col-12 h-100 object-fit-cover">
+               </audio>
+            </div>
+         </div>
+      </section>
+
+      <section class="form-section pt-5">
+         <div class="container">
+            <h2 class="font-40 text-center">Lorem ipsum</h2>
+            <div class="col-4 col-lg-6 d-flex justify-content-center mx-auto">
+               <form action="#" class="col-12">
+                  <div class="d-flex gap-15 pb-2">
+                     <div class="col-6">
+                        <label for="fname" class="font-weight-bold">First Name:</label><br>
+                        <input type="text" id="fname" class="text-gray-200 border col-12 p-8 mt-2" placeholder="first Name" required> 
+                     </div>
+                     <div class="col-6">
+                        <label for="lname" class="font-weight-bold">Last Name:</label><br>
+                        <input type="text" id="lname" class="text-gray-200 border col-12 p-8 mt-2" placeholder="last Name" required>
+                     </div>
+                  </div>
+                  <label for="email" class="font-weight-bold">Email:</label><br>
+                  <input type="email" class="col-12 border p-8 mb-2 text-gray-200 mt-2" id="email" placeholder="@gmail.com" required><br>
+                  <div class="d-flex gap-15 pb-2">
+                     <div class="col-6">
+                        <label for="m-phone" class="font-weight-bold">Mobile Number:</label><br>
+                        <input type="number" id="m-phone" class="text-gray-200 border col-12 p-8 mt-2" placeholder="Mobile-Number"  onKeyPress="if(this.value.length==12) return false;">
+                     </div>
+                     <div class="col-6">
+                        <label for="website" class="font-weight-bold">Website:</label><br>
+                        <input type="url" id="website" class="text-gray-200 col-12 border p-8 mt-2" placeholder="websites">
+                     </div>
+                  </div>
+                  <div class="d-flex gap-15 pb-2">
+                     <div class="col-6">
+                        <label for="date" class="font-weight-bold">Date:</label><br>
+                        <input type="date" id="date" class="col-12 p-8 text-gray-200 border mt-2" name="date" max="2001-01-02">
+                     </div>
+                     <div class="col-6">
+                        <label for="date-time" class="font-weight-bold">Date Time:</label>
+                        <input id="date-time" type="datetime-local" class="col-12 p-8 border text-gray-200 mt-2" name="date-time">
+                     </div>
+                  </div>
+                  <div class="d-flex gap-15 pb-2 ">
+                     <div class="col-6">
+                        <label for="country" class="font-weight-bold">Select City:</label><br>
+                        <select id="country" name="Country" class="text-gray-200 mt-2 border col-12 p-8">
+                           <option value="India">India</option>
+                           <option value="canada">Canada</option>
+                           <option value="usa">USA</option>
+                        </select>
+                     </div>
+                     <div class="col-6">
+                        <label for="gender" class="font-weight-bold">Gender:</label><br>
+                        <select id="gender" name="gender" class="col-12 p-8 border mt-2 text-gray-200">
+                           <option value="Male">Male</option>
+                           <option value="Female">Female</option>
+                           <option value="other">Other</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="pb-3 d-flex align-item-center gap-50 pt-3">
+                     <label for="folder" class="font-weight-bold ">Folder:</label>
+                     <input type="file" id="folder" name="file">
+                  </div>
+                  <div class="pb-2 d-flex align-item-center col-5 pt-3">
+                     <label for="color" class="font-weight-bold col-6">color:</label>
+                     <input type="color" id="color" class="text-gray-200 col-3" name="Color">
+                  </div>
+                  <div class="pb-2 d-flex align-item-center gap-50 pt-3">
+                     <label for="vol" class="font-weight-bold">Range:</label>
+                     <input type="range" id="vol" name="range" min="0" max="50" class="text-gray-200">
+                  </div>
+                  <div class="d-flex align-item-center gap-15 pt-3">
+                     <input type="submit" value="Submit" class="border text-gray submit-btn px-3 py-2 font-18 font-weight-bold">
+                     <input type="reset" value="reset" class="border text-gray reset-btn px-4 py-2 font-18 font-weight-bold">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <section class="pt-5 pb-3">
+         <div class="container">
+            <div class="text-center">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" class="col-lg-12" height="209" width="570"></iframe>
+            </div>
+         </div>
+      </section>
+      <footer class="mt-5 bg-gray-200">
+        <div class="container">
+           <div class="pt-2 pb-5 text-center">
+              <h6 class="mb-2 font-20">Radixweb</h6>
+                 <address class="mt-2 font-18">
+                    Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.
+                 </address>
+           </div>
+        </div>
+     </footer>
+   </body>
+</html>
